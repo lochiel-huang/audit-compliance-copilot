@@ -41,11 +41,25 @@ load_dotenv(_project_root / ".env")
 
 MODEL = "deepseek-chat"
 
+
+def _get_api_key():
+    """
+    Read DEEPSEEK_API_KEY from Streamlit secrets (cloud) or env vars (local).
+    Streamlit secrets take priority so cloud deployments work without a .env file.
+    """
+    try:
+        import streamlit as st
+        if "DEEPSEEK_API_KEY" in st.secrets:
+            return st.secrets["DEEPSEEK_API_KEY"]
+    except Exception:
+        pass
+    return os.getenv("DEEPSEEK_API_KEY")
+
+
 client = OpenAI(
-    api_key=os.getenv("DEEPSEEK_API_KEY"),
+    api_key=_get_api_key(),
     base_url="https://api.deepseek.com",
 )
-
 
 # ---------- Tool schema ----------
 
@@ -247,8 +261,8 @@ def _pretty_print(v: Voucher, injected, anomalies, a: LLMAssessment):
 
 
 def main():
-    if not os.getenv("DEEPSEEK_API_KEY"):
-        print("ERROR: DEEPSEEK_API_KEY not set in .env")
+    if not _get_api_key():
+        print("ERROR: DEEPSEEK_API_KEY not set in .env or Streamlit secrets")
         return
 
     data_path = Path(__file__).parent.parent / "data" / "sample_vouchers.json"
