@@ -1,78 +1,14 @@
 [
   {
     "voucher_id": "0001",
-    "voucher_type": "记账凭证",
-    "voucher_date": "2025-08-15",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-06-28",
     "book": "HK Book",
     "source_system": "总账",
     "attached_docs_count": 0,
     "entries": [
       {
-        "summary": "月末计提折旧",
-        "account_code": "500201",
-        "account_path": "行政费用\\行政费用-办公费",
-        "tags": {
-          "department": "行政部",
-          "counterparty": null,
-          "project_name": null,
-          "personnel": null,
-          "cash_flow_item": null,
-          "bank_file": null,
-          "bank_account": null
-        },
-        "debit_amount": "5503.72",
-        "credit_amount": "0.00"
-      },
-      {
-        "summary": "月末计提折旧",
-        "account_code": "500301",
-        "account_path": "管理费用\\累计折旧",
-        "tags": {
-          "department": null,
-          "counterparty": null,
-          "project_name": null,
-          "personnel": null,
-          "cash_flow_item": null,
-          "bank_file": null,
-          "bank_account": null
-        },
-        "debit_amount": "0.00",
-        "credit_amount": "5503.72"
-      }
-    ],
-    "preparer": "SYSTEM",
-    "reviewer": "Clian",
-    "cashier": null,
-    "bookkeeper": "Kesart",
-    "is_system_generated": true,
-    "_injected_anomaly": null
-  },
-  {
-    "voucher_id": "0002",
-    "voucher_type": "银行凭证",
-    "voucher_date": "2025-08-29",
-    "book": "HK Book",
-    "source_system": "费控服务",
-    "attached_docs_count": 4,
-    "entries": [
-      {
-        "summary": "某某电讯货款",
-        "account_code": "500201",
-        "account_path": "行政费用\\行政费用-办公费",
-        "tags": {
-          "department": "行政部",
-          "counterparty": "某某电讯",
-          "project_name": null,
-          "personnel": null,
-          "cash_flow_item": null,
-          "bank_file": null,
-          "bank_account": null
-        },
-        "debit_amount": "14725.5",
-        "credit_amount": "0.00"
-      },
-      {
-        "summary": "某某电讯货款",
+        "summary": "备付租金-储蓄户转往来户",
         "account_code": "100201",
         "account_path": "银行存款\\银行存款-活期",
         "tags": {
@@ -81,430 +17,110 @@
           "project_name": null,
           "personnel": null,
           "cash_flow_item": "支付其他与经营活动有关的现金",
-          "bank_file": "某银行有限公司",
+          "bank_file": "某某储蓄银行",
+          "bank_account": "某银行往来账户-HKD"
+        },
+        "debit_amount": "81893.98",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "储蓄户转往来户",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某某储蓄银行",
           "bank_account": "某银行综合储蓄账户-HKD"
         },
         "debit_amount": "0.00",
-        "credit_amount": "14725.5"
+        "credit_amount": "81893.98"
       }
     ],
-    "preparer": "Zeren",
-    "reviewer": "Zeren",
+    "preparer": "Faye",
+    "reviewer": "Kesart",
     "cashier": null,
-    "bookkeeper": "Neris",
+    "bookkeeper": "Lochi",
+    "is_system_generated": false,
+    "_injected_anomaly": null
+  },
+  {
+    "voucher_id": "0002",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-06-18",
+    "book": "HK Book",
+    "source_system": "总账",
+    "attached_docs_count": 5,
+    "entries": [
+      {
+        "summary": "2025年6月某某停车场",
+        "account_code": "500204",
+        "account_path": "行政费用\\行政费用-汽车费用",
+        "tags": {
+          "department": "行政部",
+          "counterparty": "某某停车场",
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "2184.1",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "2025年6月某某停车场",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某某储蓄银行",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "2184.1"
+      }
+    ],
+    "preparer": "Neris",
+    "reviewer": "Neris",
+    "cashier": null,
+    "bookkeeper": "Adan",
     "is_system_generated": false,
     "_injected_anomaly": null
   },
   {
     "voucher_id": "0003",
     "voucher_type": "银行凭证",
-    "voucher_date": "2025-06-13",
-    "book": "HK Book",
-    "source_system": "总账",
-    "attached_docs_count": 0,
-    "entries": [
-      {
-        "summary": "备付租金-储蓄户转往来户",
-        "account_code": "100201",
-        "account_path": "银行存款\\银行存款-活期",
-        "tags": {
-          "department": null,
-          "counterparty": null,
-          "project_name": null,
-          "personnel": null,
-          "cash_flow_item": "支付其他与经营活动有关的现金",
-          "bank_file": "某某储蓄银行",
-          "bank_account": "某银行往来账户-HKD"
-        },
-        "debit_amount": "177124.15",
-        "credit_amount": "0.00"
-      },
-      {
-        "summary": "储蓄户转往来户",
-        "account_code": "100201",
-        "account_path": "银行存款\\银行存款-活期",
-        "tags": {
-          "department": null,
-          "counterparty": null,
-          "project_name": null,
-          "personnel": null,
-          "cash_flow_item": "支付其他与经营活动有关的现金",
-          "bank_file": "某银行有限公司",
-          "bank_account": "某银行综合储蓄账户-HKD"
-        },
-        "debit_amount": "0.00",
-        "credit_amount": "177124.15"
-      }
-    ],
-    "preparer": "Faye",
-    "reviewer": "Zeren",
-    "cashier": null,
-    "bookkeeper": "Neris",
-    "is_system_generated": false,
-    "_injected_anomaly": null
-  },
-  {
-    "voucher_id": "0004",
-    "voucher_type": "银行凭证",
-    "voucher_date": "2025-06-11",
-    "book": "HK Book",
-    "source_system": "费控服务",
-    "attached_docs_count": 3,
-    "entries": [
-      {
-        "summary": "支出",
-        "account_code": "500201",
-        "account_path": "行政费用\\行政费用-办公费",
-        "tags": {
-          "department": "行政部",
-          "counterparty": "某某办公用品",
-          "project_name": null,
-          "personnel": null,
-          "cash_flow_item": null,
-          "bank_file": null,
-          "bank_account": null
-        },
-        "debit_amount": "34029.16",
-        "credit_amount": "0.00"
-      },
-      {
-        "summary": "费用",
-        "account_code": "100201",
-        "account_path": "银行存款\\银行存款-活期",
-        "tags": {
-          "department": null,
-          "counterparty": null,
-          "project_name": null,
-          "personnel": null,
-          "cash_flow_item": "支付其他与经营活动有关的现金",
-          "bank_file": "某某储蓄银行",
-          "bank_account": "某银行综合储蓄账户-HKD"
-        },
-        "debit_amount": "0.00",
-        "credit_amount": "34029.16"
-      }
-    ],
-    "preparer": "Zeren",
-    "reviewer": "Clian",
-    "cashier": null,
-    "bookkeeper": "Miran",
-    "is_system_generated": false,
-    "_injected_anomaly": "A6_VAGUE_SUMMARY_LARGE"
-  },
-  {
-    "voucher_id": "0005",
-    "voucher_type": "银行凭证",
-    "voucher_date": "2025-06-30",
-    "book": "HK Book",
-    "source_system": "总账",
-    "attached_docs_count": 3,
-    "entries": [
-      {
-        "summary": "2025年6月易通行",
-        "account_code": "500204",
-        "account_path": "行政费用\\行政费用-汽车费用",
-        "tags": {
-          "department": "行政部",
-          "counterparty": "易通行",
-          "project_name": null,
-          "personnel": null,
-          "cash_flow_item": null,
-          "bank_file": null,
-          "bank_account": null
-        },
-        "debit_amount": "30000.00",
-        "credit_amount": "0.00"
-      },
-      {
-        "summary": "2025年6月易通行",
-        "account_code": "100201",
-        "account_path": "银行存款\\银行存款-活期",
-        "tags": {
-          "department": null,
-          "counterparty": null,
-          "project_name": null,
-          "personnel": null,
-          "cash_flow_item": "支付其他与经营活动有关的现金",
-          "bank_file": "某某储蓄银行",
-          "bank_account": "某银行综合储蓄账户-HKD"
-        },
-        "debit_amount": "0.00",
-        "credit_amount": "30000.00"
-      }
-    ],
-    "preparer": "Kesart",
-    "reviewer": "Adan",
-    "cashier": null,
-    "bookkeeper": "Adan",
-    "is_system_generated": false,
-    "_injected_anomaly": "A2_MANUAL_ENTRY_LARGE"
-  },
-  {
-    "voucher_id": "0006",
-    "voucher_type": "银行凭证",
-    "voucher_date": "2025-06-27",
-    "book": "HK Book",
-    "source_system": "总账",
-    "attached_docs_count": 0,
-    "entries": [
-      {
-        "summary": "备付租金-储蓄户转往来户",
-        "account_code": "100201",
-        "account_path": "银行存款\\银行存款-活期",
-        "tags": {
-          "department": null,
-          "counterparty": null,
-          "project_name": null,
-          "personnel": null,
-          "cash_flow_item": "支付其他与经营活动有关的现金",
-          "bank_file": "某银行有限公司",
-          "bank_account": "某银行往来账户-HKD"
-        },
-        "debit_amount": "155273.05",
-        "credit_amount": "0.00"
-      },
-      {
-        "summary": "储蓄户转往来户",
-        "account_code": "100201",
-        "account_path": "银行存款\\银行存款-活期",
-        "tags": {
-          "department": null,
-          "counterparty": null,
-          "project_name": null,
-          "personnel": null,
-          "cash_flow_item": "支付其他与经营活动有关的现金",
-          "bank_file": "某银行有限公司",
-          "bank_account": "某银行综合储蓄账户-HKD"
-        },
-        "debit_amount": "0.00",
-        "credit_amount": "155273.05"
-      }
-    ],
-    "preparer": "Miran",
-    "reviewer": "Kesart",
-    "cashier": null,
-    "bookkeeper": "Faye",
-    "is_system_generated": false,
-    "_injected_anomaly": null
-  },
-  {
-    "voucher_id": "0007",
-    "voucher_type": "银行凭证",
-    "voucher_date": "2025-07-19",
-    "book": "HK Book",
-    "source_system": "总账",
-    "attached_docs_count": 0,
-    "entries": [
-      {
-        "summary": "备付租金-储蓄户转往来户",
-        "account_code": "100201",
-        "account_path": "银行存款\\银行存款-活期",
-        "tags": {
-          "department": null,
-          "counterparty": null,
-          "project_name": null,
-          "personnel": null,
-          "cash_flow_item": "支付其他与经营活动有关的现金",
-          "bank_file": "某银行有限公司",
-          "bank_account": "某银行往来账户-HKD"
-        },
-        "debit_amount": "198428.5",
-        "credit_amount": "0.00"
-      },
-      {
-        "summary": "储蓄户转往来户",
-        "account_code": "100201",
-        "account_path": "银行存款\\银行存款-活期",
-        "tags": {
-          "department": null,
-          "counterparty": null,
-          "project_name": null,
-          "personnel": null,
-          "cash_flow_item": "支付其他与经营活动有关的现金",
-          "bank_file": "某某储蓄银行",
-          "bank_account": "某银行综合储蓄账户-HKD"
-        },
-        "debit_amount": "0.00",
-        "credit_amount": "198428.5"
-      }
-    ],
-    "preparer": "Clian",
-    "reviewer": "Miran",
-    "cashier": null,
-    "bookkeeper": "Clian",
-    "is_system_generated": false,
-    "_injected_anomaly": null
-  },
-  {
-    "voucher_id": "0008",
-    "voucher_type": "银行凭证",
-    "voucher_date": "2025-07-11",
-    "book": "HK Book",
-    "source_system": "费控服务",
-    "attached_docs_count": 3,
-    "entries": [
-      {
-        "summary": "某某办公用品货款",
-        "account_code": "500201",
-        "account_path": "行政费用\\行政费用-办公费",
-        "tags": {
-          "department": "行政部",
-          "counterparty": "某某办公用品",
-          "project_name": null,
-          "personnel": null,
-          "cash_flow_item": null,
-          "bank_file": null,
-          "bank_account": null
-        },
-        "debit_amount": "7316.6",
-        "credit_amount": "0.00"
-      },
-      {
-        "summary": "某某办公用品货款",
-        "account_code": "100201",
-        "account_path": "银行存款\\银行存款-活期",
-        "tags": {
-          "department": null,
-          "counterparty": null,
-          "project_name": null,
-          "personnel": null,
-          "cash_flow_item": "支付其他与经营活动有关的现金",
-          "bank_file": "某某储蓄银行",
-          "bank_account": "某银行综合储蓄账户-HKD"
-        },
-        "debit_amount": "0.00",
-        "credit_amount": "7316.6"
-      }
-    ],
-    "preparer": "Faye",
-    "reviewer": "Neris",
-    "cashier": null,
-    "bookkeeper": "Faye",
-    "is_system_generated": false,
-    "_injected_anomaly": null
-  },
-  {
-    "voucher_id": "0009",
-    "voucher_type": "银行凭证",
-    "voucher_date": "2025-06-19",
-    "book": "HK Book",
-    "source_system": "总账",
-    "attached_docs_count": 0,
-    "entries": [
-      {
-        "summary": "备付租金-储蓄户转往来户",
-        "account_code": "100201",
-        "account_path": "银行存款\\银行存款-活期",
-        "tags": {
-          "department": null,
-          "counterparty": null,
-          "project_name": null,
-          "personnel": null,
-          "cash_flow_item": "支付其他与经营活动有关的现金",
-          "bank_file": "某某储蓄银行",
-          "bank_account": "某银行往来账户-HKD"
-        },
-        "debit_amount": "70944.55",
-        "credit_amount": "0.00"
-      },
-      {
-        "summary": "储蓄户转往来户",
-        "account_code": "100201",
-        "account_path": "银行存款\\银行存款-活期",
-        "tags": {
-          "department": null,
-          "counterparty": null,
-          "project_name": null,
-          "personnel": null,
-          "cash_flow_item": "支付其他与经营活动有关的现金",
-          "bank_file": "某某储蓄银行",
-          "bank_account": "某银行综合储蓄账户-HKD"
-        },
-        "debit_amount": "0.00",
-        "credit_amount": "70944.55"
-      }
-    ],
-    "preparer": "Neris",
-    "reviewer": "Adan",
-    "cashier": null,
-    "bookkeeper": "Miran",
-    "is_system_generated": false,
-    "_injected_anomaly": null
-  },
-  {
-    "voucher_id": "0010",
-    "voucher_type": "银行凭证",
-    "voucher_date": "2025-06-18",
-    "book": "HK Book",
-    "source_system": "费控服务",
-    "attached_docs_count": 3,
-    "entries": [
-      {
-        "summary": "上海某某物业管理有限公司货款",
-        "account_code": "500201",
-        "account_path": "行政费用\\行政费用-办公费",
-        "tags": {
-          "department": "行政部",
-          "counterparty": "上海某某物业管理有限公司",
-          "project_name": null,
-          "personnel": null,
-          "cash_flow_item": null,
-          "bank_file": null,
-          "bank_account": null
-        },
-        "debit_amount": "31452.38",
-        "credit_amount": "0.00"
-      },
-      {
-        "summary": "上海某某物业管理有限公司货款",
-        "account_code": "100201",
-        "account_path": "银行存款\\银行存款-活期",
-        "tags": {
-          "department": null,
-          "counterparty": null,
-          "project_name": null,
-          "personnel": null,
-          "cash_flow_item": "支付其他与经营活动有关的现金",
-          "bank_file": "某银行有限公司",
-          "bank_account": "某银行综合储蓄账户-HKD"
-        },
-        "debit_amount": "0.00",
-        "credit_amount": "31452.38"
-      }
-    ],
-    "preparer": "Kesart",
-    "reviewer": "Neris",
-    "cashier": null,
-    "bookkeeper": "Zeren",
-    "is_system_generated": false,
-    "_injected_anomaly": null
-  },
-  {
-    "voucher_id": "0011",
-    "voucher_type": "银行凭证",
-    "voucher_date": "2025-07-20",
+    "voucher_date": "2025-06-29",
     "book": "HK Book",
     "source_system": "费控服务",
     "attached_docs_count": 2,
     "entries": [
       {
-        "summary": "某某会计师事务所货款",
-        "account_code": "500201",
-        "account_path": "行政费用\\行政费用-办公费",
+        "summary": "Kesart, 北京市, 差旅费",
+        "account_code": "500603",
+        "account_path": "业务费用\\业务费用-员工-差旅费（境内）",
         "tags": {
-          "department": "行政部",
-          "counterparty": "某某会计师事务所",
+          "department": "战略投资部",
+          "counterparty": null,
           "project_name": null,
-          "personnel": null,
+          "personnel": "Kesart",
           "cash_flow_item": null,
           "bank_file": null,
           "bank_account": null
         },
-        "debit_amount": "23519.0",
+        "debit_amount": "2136.37",
         "credit_amount": "0.00"
       },
       {
-        "summary": "某某会计师事务所货款",
+        "summary": "差旅费",
         "account_code": "100201",
         "account_path": "银行存款\\银行存款-活期",
         "tags": {
@@ -517,7 +133,55 @@
           "bank_account": "某银行综合储蓄账户-HKD"
         },
         "debit_amount": "0.00",
-        "credit_amount": "23519.0"
+        "credit_amount": "2136.37"
+      }
+    ],
+    "preparer": "Kesart",
+    "reviewer": "Kesart",
+    "cashier": null,
+    "bookkeeper": "Neris",
+    "is_system_generated": false,
+    "_injected_anomaly": "A4_MISSING_PROJECT_TRAVEL"
+  },
+  {
+    "voucher_id": "0004",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-08-16",
+    "book": "HK Book",
+    "source_system": "费控服务",
+    "attached_docs_count": 2,
+    "entries": [
+      {
+        "summary": "Neris, 北京市, 差旅费",
+        "account_code": "500603",
+        "account_path": "业务费用\\业务费用-员工-差旅费（境内）",
+        "tags": {
+          "department": "战略投资部",
+          "counterparty": null,
+          "project_name": "Aster",
+          "personnel": "Neris",
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "5203.8",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "差旅费",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某银行有限公司",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "5203.8"
       }
     ],
     "preparer": "Lochi",
@@ -528,345 +192,9 @@
     "_injected_anomaly": null
   },
   {
-    "voucher_id": "0012",
-    "voucher_type": "银行凭证",
-    "voucher_date": "2025-07-08",
-    "book": "HK Book",
-    "source_system": "费控服务",
-    "attached_docs_count": 4,
-    "entries": [
-      {
-        "summary": "某某保险货款",
-        "account_code": "500201",
-        "account_path": "行政费用\\行政费用-办公费",
-        "tags": {
-          "department": "行政部",
-          "counterparty": null,
-          "project_name": null,
-          "personnel": null,
-          "cash_flow_item": null,
-          "bank_file": null,
-          "bank_account": null
-        },
-        "debit_amount": "10535.52",
-        "credit_amount": "0.00"
-      },
-      {
-        "summary": "某某保险货款",
-        "account_code": "100201",
-        "account_path": "银行存款\\银行存款-活期",
-        "tags": {
-          "department": null,
-          "counterparty": null,
-          "project_name": null,
-          "personnel": null,
-          "cash_flow_item": "支付其他与经营活动有关的现金",
-          "bank_file": "某银行有限公司",
-          "bank_account": "某银行综合储蓄账户-HKD"
-        },
-        "debit_amount": "0.00",
-        "credit_amount": "10535.52"
-      }
-    ],
-    "preparer": "Kesart",
-    "reviewer": "Zeren",
-    "cashier": null,
-    "bookkeeper": "Lochi",
-    "is_system_generated": false,
-    "_injected_anomaly": "A5_MISSING_COUNTERPARTY"
-  },
-  {
-    "voucher_id": "0013",
-    "voucher_type": "银行凭证",
-    "voucher_date": "2025-08-21",
-    "book": "HK Book",
-    "source_system": "费控服务",
-    "attached_docs_count": 6,
-    "entries": [
-      {
-        "summary": "Miran, 上海市, 差旅费",
-        "account_code": "500603",
-        "account_path": "业务费用\\业务费用-员工-差旅费（境内）",
-        "tags": {
-          "department": "战略投资部",
-          "counterparty": null,
-          "project_name": "Orion",
-          "personnel": null,
-          "cash_flow_item": null,
-          "bank_file": null,
-          "bank_account": null
-        },
-        "debit_amount": "6837.58",
-        "credit_amount": "0.00"
-      },
-      {
-        "summary": "差旅费",
-        "account_code": "100201",
-        "account_path": "银行存款\\银行存款-活期",
-        "tags": {
-          "department": null,
-          "counterparty": null,
-          "project_name": null,
-          "personnel": null,
-          "cash_flow_item": "支付其他与经营活动有关的现金",
-          "bank_file": "某银行有限公司",
-          "bank_account": "某银行综合储蓄账户-HKD"
-        },
-        "debit_amount": "0.00",
-        "credit_amount": "6837.58"
-      }
-    ],
-    "preparer": "Adan",
-    "reviewer": "Faye",
-    "cashier": null,
-    "bookkeeper": "Clian",
-    "is_system_generated": false,
-    "_injected_anomaly": "A3_MISSING_PERSONNEL_TRAVEL"
-  },
-  {
-    "voucher_id": "0014",
-    "voucher_type": "银行凭证",
-    "voucher_date": "2025-06-15",
-    "book": "HK Book",
-    "source_system": "费控服务",
-    "attached_docs_count": 0,
-    "entries": [
-      {
-        "summary": "某某电讯货款",
-        "account_code": "500201",
-        "account_path": "行政费用\\行政费用-办公费",
-        "tags": {
-          "department": "行政部",
-          "counterparty": "某某电讯",
-          "project_name": null,
-          "personnel": null,
-          "cash_flow_item": null,
-          "bank_file": null,
-          "bank_account": null
-        },
-        "debit_amount": "35755.27",
-        "credit_amount": "0.00"
-      },
-      {
-        "summary": "某某电讯货款",
-        "account_code": "100201",
-        "account_path": "银行存款\\银行存款-活期",
-        "tags": {
-          "department": null,
-          "counterparty": null,
-          "project_name": null,
-          "personnel": null,
-          "cash_flow_item": "支付其他与经营活动有关的现金",
-          "bank_file": "某某储蓄银行",
-          "bank_account": "某银行综合储蓄账户-HKD"
-        },
-        "debit_amount": "0.00",
-        "credit_amount": "35755.27"
-      }
-    ],
-    "preparer": "Clian",
-    "reviewer": "Miran",
-    "cashier": null,
-    "bookkeeper": "Zeren",
-    "is_system_generated": false,
-    "_injected_anomaly": "A1_MISSING_DOCS_EXPENSE"
-  },
-  {
-    "voucher_id": "0015",
-    "voucher_type": "银行凭证",
-    "voucher_date": "2025-06-11",
-    "book": "HK Book",
-    "source_system": "费控服务",
-    "attached_docs_count": 3,
-    "entries": [
-      {
-        "summary": "上海某某物业管理有限公司货款",
-        "account_code": "500201",
-        "account_path": "行政费用\\行政费用-办公费",
-        "tags": {
-          "department": "行政部",
-          "counterparty": "上海某某物业管理有限公司",
-          "project_name": null,
-          "personnel": null,
-          "cash_flow_item": null,
-          "bank_file": null,
-          "bank_account": null
-        },
-        "debit_amount": "39229.46",
-        "credit_amount": "0.00"
-      },
-      {
-        "summary": "上海某某物业管理有限公司货款",
-        "account_code": "100201",
-        "account_path": "银行存款\\银行存款-活期",
-        "tags": {
-          "department": null,
-          "counterparty": null,
-          "project_name": null,
-          "personnel": null,
-          "cash_flow_item": "支付其他与经营活动有关的现金",
-          "bank_file": "某银行有限公司",
-          "bank_account": "某银行综合储蓄账户-HKD"
-        },
-        "debit_amount": "0.00",
-        "credit_amount": "39229.46"
-      }
-    ],
-    "preparer": "Faye",
-    "reviewer": "Kesart",
-    "cashier": null,
-    "bookkeeper": "Lochi",
-    "is_system_generated": false,
-    "_injected_anomaly": null
-  },
-  {
-    "voucher_id": "0016",
-    "voucher_type": "银行凭证",
-    "voucher_date": "2025-08-07",
-    "book": "HK Book",
-    "source_system": "费控服务",
-    "attached_docs_count": 0,
-    "entries": [
-      {
-        "summary": "某某保险货款",
-        "account_code": "500201",
-        "account_path": "行政费用\\行政费用-办公费",
-        "tags": {
-          "department": "行政部",
-          "counterparty": "某某保险",
-          "project_name": null,
-          "personnel": null,
-          "cash_flow_item": null,
-          "bank_file": null,
-          "bank_account": null
-        },
-        "debit_amount": "38752.7",
-        "credit_amount": "0.00"
-      },
-      {
-        "summary": "某某保险货款",
-        "account_code": "100201",
-        "account_path": "银行存款\\银行存款-活期",
-        "tags": {
-          "department": null,
-          "counterparty": null,
-          "project_name": null,
-          "personnel": null,
-          "cash_flow_item": "支付其他与经营活动有关的现金",
-          "bank_file": "某银行有限公司",
-          "bank_account": "某银行综合储蓄账户-HKD"
-        },
-        "debit_amount": "0.00",
-        "credit_amount": "38752.7"
-      }
-    ],
-    "preparer": "Neris",
-    "reviewer": "Adan",
-    "cashier": null,
-    "bookkeeper": "Faye",
-    "is_system_generated": false,
-    "_injected_anomaly": "A1_MISSING_DOCS_EXPENSE"
-  },
-  {
-    "voucher_id": "0017",
-    "voucher_type": "银行凭证",
-    "voucher_date": "2025-08-06",
-    "book": "HK Book",
-    "source_system": "费控服务",
-    "attached_docs_count": 4,
-    "entries": [
-      {
-        "summary": "上海某某物业管理有限公司货款",
-        "account_code": "500201",
-        "account_path": "行政费用\\行政费用-办公费",
-        "tags": {
-          "department": "行政部",
-          "counterparty": "上海某某物业管理有限公司",
-          "project_name": null,
-          "personnel": null,
-          "cash_flow_item": null,
-          "bank_file": null,
-          "bank_account": null
-        },
-        "debit_amount": "13676.7",
-        "credit_amount": "0.00"
-      },
-      {
-        "summary": "上海某某物业管理有限公司货款",
-        "account_code": "100201",
-        "account_path": "银行存款\\银行存款-活期",
-        "tags": {
-          "department": null,
-          "counterparty": null,
-          "project_name": null,
-          "personnel": null,
-          "cash_flow_item": "支付其他与经营活动有关的现金",
-          "bank_file": "某银行有限公司",
-          "bank_account": "某银行综合储蓄账户-HKD"
-        },
-        "debit_amount": "0.00",
-        "credit_amount": "13676.7"
-      }
-    ],
-    "preparer": "Clian",
-    "reviewer": "Miran",
-    "cashier": null,
-    "bookkeeper": "Miran",
-    "is_system_generated": false,
-    "_injected_anomaly": null
-  },
-  {
-    "voucher_id": "0018",
-    "voucher_type": "银行凭证",
-    "voucher_date": "2025-06-01",
-    "book": "HK Book",
-    "source_system": "费控服务",
-    "attached_docs_count": 2,
-    "entries": [
-      {
-        "summary": "Clian, 广州市, 差旅费",
-        "account_code": "500603",
-        "account_path": "业务费用\\业务费用-员工-差旅费（境内）",
-        "tags": {
-          "department": "战略投资部",
-          "counterparty": null,
-          "project_name": "Orion",
-          "personnel": "Clian",
-          "cash_flow_item": null,
-          "bank_file": null,
-          "bank_account": null
-        },
-        "debit_amount": "7837.94",
-        "credit_amount": "0.00"
-      },
-      {
-        "summary": "差旅费",
-        "account_code": "100201",
-        "account_path": "银行存款\\银行存款-活期",
-        "tags": {
-          "department": null,
-          "counterparty": null,
-          "project_name": null,
-          "personnel": null,
-          "cash_flow_item": "支付其他与经营活动有关的现金",
-          "bank_file": "某某储蓄银行",
-          "bank_account": "某银行综合储蓄账户-HKD"
-        },
-        "debit_amount": "0.00",
-        "credit_amount": "7837.94"
-      }
-    ],
-    "preparer": "Miran",
-    "reviewer": "Lochi",
-    "cashier": null,
-    "bookkeeper": "Faye",
-    "is_system_generated": false,
-    "_injected_anomaly": null
-  },
-  {
-    "voucher_id": "0019",
+    "voucher_id": "0005",
     "voucher_type": "记账凭证",
-    "voucher_date": "2025-06-28",
+    "voucher_date": "2025-07-08",
     "book": "HK Book",
     "source_system": "总账",
     "attached_docs_count": 0,
@@ -884,7 +212,7 @@
           "bank_file": null,
           "bank_account": null
         },
-        "debit_amount": "7853.11",
+        "debit_amount": "6912.89",
         "credit_amount": "0.00"
       },
       {
@@ -901,18 +229,354 @@
           "bank_account": null
         },
         "debit_amount": "0.00",
-        "credit_amount": "7853.11"
+        "credit_amount": "6912.89"
       }
     ],
     "preparer": "SYSTEM",
     "reviewer": "Faye",
     "cashier": null,
-    "bookkeeper": "Miran",
+    "bookkeeper": "Clian",
     "is_system_generated": true,
     "_injected_anomaly": null
   },
   {
-    "voucher_id": "0020",
+    "voucher_id": "0006",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-07-04",
+    "book": "HK Book",
+    "source_system": "总账",
+    "attached_docs_count": 5,
+    "entries": [
+      {
+        "summary": "2025年7月某某停车场",
+        "account_code": "500204",
+        "account_path": "行政费用\\行政费用-汽车费用",
+        "tags": {
+          "department": "行政部",
+          "counterparty": "某某停车场",
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "3237.88",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "2025年7月某某停车场",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某某储蓄银行",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "3237.88"
+      }
+    ],
+    "preparer": "Miran",
+    "reviewer": "Kesart",
+    "cashier": null,
+    "bookkeeper": "Adan",
+    "is_system_generated": false,
+    "_injected_anomaly": null
+  },
+  {
+    "voucher_id": "0007",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-06-21",
+    "book": "HK Book",
+    "source_system": "费控服务",
+    "attached_docs_count": 4,
+    "entries": [
+      {
+        "summary": "Adan, 广州市, 差旅费",
+        "account_code": "500603",
+        "account_path": "业务费用\\业务费用-员工-差旅费（境内）",
+        "tags": {
+          "department": "战略投资部",
+          "counterparty": null,
+          "project_name": "Aster",
+          "personnel": "Adan",
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "2283.07",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "差旅费",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某某储蓄银行",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "2283.07"
+      }
+    ],
+    "preparer": "Miran",
+    "reviewer": "Clian",
+    "cashier": null,
+    "bookkeeper": "Miran",
+    "is_system_generated": false,
+    "_injected_anomaly": null
+  },
+  {
+    "voucher_id": "0008",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-08-12",
+    "book": "HK Book",
+    "source_system": "费控服务",
+    "attached_docs_count": 0,
+    "entries": [
+      {
+        "summary": "上海某某物业管理有限公司货款",
+        "account_code": "500201",
+        "account_path": "行政费用\\行政费用-办公费",
+        "tags": {
+          "department": "行政部",
+          "counterparty": "上海某某物业管理有限公司",
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "7997.87",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "上海某某物业管理有限公司货款",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某某储蓄银行",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "7997.87"
+      }
+    ],
+    "preparer": "Kesart",
+    "reviewer": "Kesart",
+    "cashier": null,
+    "bookkeeper": "Faye",
+    "is_system_generated": false,
+    "_injected_anomaly": "A1_MISSING_DOCS_EXPENSE"
+  },
+  {
+    "voucher_id": "0009",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-08-10",
+    "book": "HK Book",
+    "source_system": "总账",
+    "attached_docs_count": 2,
+    "entries": [
+      {
+        "summary": "2025年8月某某加油站",
+        "account_code": "500204",
+        "account_path": "行政费用\\行政费用-汽车费用",
+        "tags": {
+          "department": "行政部",
+          "counterparty": "某某加油站",
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "2083.02",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "2025年8月某某加油站",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某某储蓄银行",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "2083.02"
+      }
+    ],
+    "preparer": "Miran",
+    "reviewer": "Lochi",
+    "cashier": null,
+    "bookkeeper": "Neris",
+    "is_system_generated": false,
+    "_injected_anomaly": null
+  },
+  {
+    "voucher_id": "0010",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-08-25",
+    "book": "HK Book",
+    "source_system": "费控服务",
+    "attached_docs_count": 2,
+    "entries": [
+      {
+        "summary": "Adan, 北京市, 差旅费",
+        "account_code": "500603",
+        "account_path": "业务费用\\业务费用-员工-差旅费（境内）",
+        "tags": {
+          "department": "战略投资部",
+          "counterparty": null,
+          "project_name": "Aster",
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "2347.03",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "差旅费",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某银行有限公司",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "2347.03"
+      }
+    ],
+    "preparer": "Adan",
+    "reviewer": "Clian",
+    "cashier": null,
+    "bookkeeper": "Miran",
+    "is_system_generated": false,
+    "_injected_anomaly": "A3_MISSING_PERSONNEL_TRAVEL"
+  },
+  {
+    "voucher_id": "0011",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-08-15",
+    "book": "HK Book",
+    "source_system": "费控服务",
+    "attached_docs_count": 3,
+    "entries": [
+      {
+        "summary": "Miran, 广州市, 差旅费",
+        "account_code": "500603",
+        "account_path": "业务费用\\业务费用-员工-差旅费（境内）",
+        "tags": {
+          "department": "战略投资部",
+          "counterparty": null,
+          "project_name": null,
+          "personnel": "Miran",
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "6454.89",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "差旅费",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某银行有限公司",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "6454.89"
+      }
+    ],
+    "preparer": "Zeren",
+    "reviewer": "Clian",
+    "cashier": null,
+    "bookkeeper": "Adan",
+    "is_system_generated": false,
+    "_injected_anomaly": "A4_MISSING_PROJECT_TRAVEL"
+  },
+  {
+    "voucher_id": "0012",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-06-10",
+    "book": "HK Book",
+    "source_system": "总账",
+    "attached_docs_count": 5,
+    "entries": [
+      {
+        "summary": "2025年6月某某加油站",
+        "account_code": "500204",
+        "account_path": "行政费用\\行政费用-汽车费用",
+        "tags": {
+          "department": "行政部",
+          "counterparty": "某某加油站",
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "2506.93",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "2025年6月某某加油站",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某银行有限公司",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "2506.93"
+      }
+    ],
+    "preparer": "Kesart",
+    "reviewer": "Faye",
+    "cashier": null,
+    "bookkeeper": "Miran",
+    "is_system_generated": false,
+    "_injected_anomaly": null
+  },
+  {
+    "voucher_id": "0013",
     "voucher_type": "银行凭证",
     "voucher_date": "2025-07-31",
     "book": "HK Book",
@@ -960,7 +624,7 @@
     "_injected_anomaly": null
   },
   {
-    "voucher_id": "0021",
+    "voucher_id": "0014",
     "voucher_type": "银行凭证",
     "voucher_date": "2025-06-07",
     "book": "HK Book",
@@ -1008,12 +672,396 @@
     "_injected_anomaly": null
   },
   {
-    "voucher_id": "0022",
+    "voucher_id": "0015",
     "voucher_type": "银行凭证",
     "voucher_date": "2025-06-18",
     "book": "HK Book",
+    "source_system": "费控服务",
+    "attached_docs_count": 5,
+    "entries": [
+      {
+        "summary": "Neris, 上海市, 差旅费",
+        "account_code": "500603",
+        "account_path": "业务费用\\业务费用-员工-差旅费（境内）",
+        "tags": {
+          "department": "战略投资部",
+          "counterparty": null,
+          "project_name": "Orion",
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "4738.4",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "差旅费",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某银行有限公司",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "4738.4"
+      }
+    ],
+    "preparer": "Zeren",
+    "reviewer": "Clian",
+    "cashier": null,
+    "bookkeeper": "Clian",
+    "is_system_generated": false,
+    "_injected_anomaly": "A3_MISSING_PERSONNEL_TRAVEL"
+  },
+  {
+    "voucher_id": "0016",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-06-12",
+    "book": "HK Book",
     "source_system": "总账",
     "attached_docs_count": 2,
+    "entries": [
+      {
+        "summary": "2025年6月易通行",
+        "account_code": "500204",
+        "account_path": "行政费用\\行政费用-汽车费用",
+        "tags": {
+          "department": "行政部",
+          "counterparty": "易通行",
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "1719.24",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "2025年6月易通行",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某某储蓄银行",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "1719.24"
+      }
+    ],
+    "preparer": "Neris",
+    "reviewer": "Clian",
+    "cashier": null,
+    "bookkeeper": "Kesart",
+    "is_system_generated": false,
+    "_injected_anomaly": null
+  },
+  {
+    "voucher_id": "0017",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-07-19",
+    "book": "HK Book",
+    "source_system": "费控服务",
+    "attached_docs_count": 3,
+    "entries": [
+      {
+        "summary": "Neris, 北京市, 差旅费",
+        "account_code": "500603",
+        "account_path": "业务费用\\业务费用-员工-差旅费（境内）",
+        "tags": {
+          "department": "战略投资部",
+          "counterparty": null,
+          "project_name": "Kestrel",
+          "personnel": "Neris",
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "3496.74",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "差旅费",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某某储蓄银行",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "3496.74"
+      }
+    ],
+    "preparer": "Miran",
+    "reviewer": "Lochi",
+    "cashier": null,
+    "bookkeeper": "Miran",
+    "is_system_generated": false,
+    "_injected_anomaly": null
+  },
+  {
+    "voucher_id": "0018",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-06-08",
+    "book": "HK Book",
+    "source_system": "费控服务",
+    "attached_docs_count": 2,
+    "entries": [
+      {
+        "summary": "易通行货款",
+        "account_code": "500201",
+        "account_path": "行政费用\\行政费用-办公费",
+        "tags": {
+          "department": "行政部",
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "31179.14",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "易通行货款",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某银行有限公司",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "31179.14"
+      }
+    ],
+    "preparer": "Faye",
+    "reviewer": "Kesart",
+    "cashier": null,
+    "bookkeeper": "Clian",
+    "is_system_generated": false,
+    "_injected_anomaly": "A5_MISSING_COUNTERPARTY"
+  },
+  {
+    "voucher_id": "0019",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-08-05",
+    "book": "HK Book",
+    "source_system": "费控服务",
+    "attached_docs_count": 0,
+    "entries": [
+      {
+        "summary": "上海某某物业管理有限公司货款",
+        "account_code": "500201",
+        "account_path": "行政费用\\行政费用-办公费",
+        "tags": {
+          "department": "行政部",
+          "counterparty": "上海某某物业管理有限公司",
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "34796.99",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "上海某某物业管理有限公司货款",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某银行有限公司",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "34796.99"
+      }
+    ],
+    "preparer": "Miran",
+    "reviewer": "Neris",
+    "cashier": null,
+    "bookkeeper": "Zeren",
+    "is_system_generated": false,
+    "_injected_anomaly": "A1_MISSING_DOCS_EXPENSE"
+  },
+  {
+    "voucher_id": "0020",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-08-12",
+    "book": "HK Book",
+    "source_system": "总账",
+    "attached_docs_count": 4,
+    "entries": [
+      {
+        "summary": "2025年8月某某停车场",
+        "account_code": "500204",
+        "account_path": "行政费用\\行政费用-汽车费用",
+        "tags": {
+          "department": "行政部",
+          "counterparty": "某某停车场",
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "2283.56",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "2025年8月某某停车场",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某银行有限公司",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "2283.56"
+      }
+    ],
+    "preparer": "Adan",
+    "reviewer": "Lochi",
+    "cashier": null,
+    "bookkeeper": "Miran",
+    "is_system_generated": false,
+    "_injected_anomaly": null
+  },
+  {
+    "voucher_id": "0021",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-08-25",
+    "book": "HK Book",
+    "source_system": "总账",
+    "attached_docs_count": 0,
+    "entries": [
+      {
+        "summary": "备付租金-储蓄户转往来户",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某某储蓄银行",
+          "bank_account": "某银行往来账户-HKD"
+        },
+        "debit_amount": "85802.89",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "储蓄户转往来户",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某银行有限公司",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "85802.89"
+      }
+    ],
+    "preparer": "Lochi",
+    "reviewer": "Faye",
+    "cashier": null,
+    "bookkeeper": "Adan",
+    "is_system_generated": false,
+    "_injected_anomaly": null
+  },
+  {
+    "voucher_id": "0022",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-06-10",
+    "book": "HK Book",
+    "source_system": "费控服务",
+    "attached_docs_count": 6,
+    "entries": [
+      {
+        "summary": "Faye, 广州市, 差旅费",
+        "account_code": "500603",
+        "account_path": "业务费用\\业务费用-员工-差旅费（境内）",
+        "tags": {
+          "department": "战略投资部",
+          "counterparty": null,
+          "project_name": "Vela",
+          "personnel": "Faye",
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "2012.83",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "差旅费",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某银行有限公司",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "2012.83"
+      }
+    ],
+    "preparer": "Lochi",
+    "reviewer": "Kesart",
+    "cashier": null,
+    "bookkeeper": "Adan",
+    "is_system_generated": false,
+    "_injected_anomaly": null
+  },
+  {
+    "voucher_id": "0023",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-06-09",
+    "book": "HK Book",
+    "source_system": "总账",
+    "attached_docs_count": 5,
     "entries": [
       {
         "summary": "2025年6月某某加油站",
@@ -1028,7 +1076,7 @@
           "bank_file": null,
           "bank_account": null
         },
-        "debit_amount": "30000.00",
+        "debit_amount": "1354.96",
         "credit_amount": "0.00"
       },
       {
@@ -1045,38 +1093,38 @@
           "bank_account": "某银行综合储蓄账户-HKD"
         },
         "debit_amount": "0.00",
-        "credit_amount": "30000.00"
+        "credit_amount": "1354.96"
       }
     ],
-    "preparer": "Zeren",
-    "reviewer": "Faye",
+    "preparer": "Lochi",
+    "reviewer": "Clian",
     "cashier": null,
-    "bookkeeper": "Zeren",
+    "bookkeeper": "Lochi",
     "is_system_generated": false,
-    "_injected_anomaly": "A2_MANUAL_ENTRY_LARGE"
+    "_injected_anomaly": null
   },
   {
-    "voucher_id": "0023",
+    "voucher_id": "0024",
     "voucher_type": "银行凭证",
-    "voucher_date": "2025-06-07",
+    "voucher_date": "2025-08-24",
     "book": "HK Book",
     "source_system": "费控服务",
-    "attached_docs_count": 3,
+    "attached_docs_count": 6,
     "entries": [
       {
-        "summary": "Zeren, 深圳市, 差旅费",
+        "summary": "Zeren, 上海市, 差旅费",
         "account_code": "500603",
         "account_path": "业务费用\\业务费用-员工-差旅费（境内）",
         "tags": {
           "department": "战略投资部",
           "counterparty": null,
           "project_name": "Orion",
-          "personnel": "Zeren",
+          "personnel": null,
           "cash_flow_item": null,
           "bank_file": null,
           "bank_account": null
         },
-        "debit_amount": "4344.9",
+        "debit_amount": "2308.0",
         "credit_amount": "0.00"
       },
       {
@@ -1089,22 +1137,310 @@
           "project_name": null,
           "personnel": null,
           "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某银行有限公司",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "2308.0"
+      }
+    ],
+    "preparer": "Kesart",
+    "reviewer": "Lochi",
+    "cashier": null,
+    "bookkeeper": "Lochi",
+    "is_system_generated": false,
+    "_injected_anomaly": "A3_MISSING_PERSONNEL_TRAVEL"
+  },
+  {
+    "voucher_id": "0025",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-08-17",
+    "book": "HK Book",
+    "source_system": "费控服务",
+    "attached_docs_count": 4,
+    "entries": [
+      {
+        "summary": "某某差旅代理货款",
+        "account_code": "500201",
+        "account_path": "行政费用\\行政费用-办公费",
+        "tags": {
+          "department": "行政部",
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "30116.43",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "某某差旅代理货款",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某银行有限公司",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "30116.43"
+      }
+    ],
+    "preparer": "Faye",
+    "reviewer": "Lochi",
+    "cashier": null,
+    "bookkeeper": "Clian",
+    "is_system_generated": false,
+    "_injected_anomaly": "A5_MISSING_COUNTERPARTY"
+  },
+  {
+    "voucher_id": "0026",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-06-12",
+    "book": "HK Book",
+    "source_system": "费控服务",
+    "attached_docs_count": 3,
+    "entries": [
+      {
+        "summary": "某某办公用品货款",
+        "account_code": "500201",
+        "account_path": "行政费用\\行政费用-办公费",
+        "tags": {
+          "department": "行政部",
+          "counterparty": "某某办公用品",
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "6543.04",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "某某办公用品货款",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
           "bank_file": "某某储蓄银行",
           "bank_account": "某银行综合储蓄账户-HKD"
         },
         "debit_amount": "0.00",
-        "credit_amount": "4344.9"
+        "credit_amount": "6543.04"
       }
     ],
-    "preparer": "Neris",
-    "reviewer": "Clian",
+    "preparer": "Lochi",
+    "reviewer": "Kesart",
     "cashier": null,
-    "bookkeeper": "Kesart",
+    "bookkeeper": "Faye",
     "is_system_generated": false,
     "_injected_anomaly": null
   },
   {
-    "voucher_id": "0024",
+    "voucher_id": "0027",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-08-10",
+    "book": "HK Book",
+    "source_system": "总账",
+    "attached_docs_count": 1,
+    "entries": [
+      {
+        "summary": "2025年8月某某停车场",
+        "account_code": "500204",
+        "account_path": "行政费用\\行政费用-汽车费用",
+        "tags": {
+          "department": "行政部",
+          "counterparty": "某某停车场",
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "30000.00",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "2025年8月某某停车场",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某银行有限公司",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "30000.00"
+      }
+    ],
+    "preparer": "Zeren",
+    "reviewer": "Kesart",
+    "cashier": null,
+    "bookkeeper": "Clian",
+    "is_system_generated": false,
+    "_injected_anomaly": "A2_MANUAL_ENTRY_LARGE"
+  },
+  {
+    "voucher_id": "0028",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-07-18",
+    "book": "HK Book",
+    "source_system": "总账",
+    "attached_docs_count": 3,
+    "entries": [
+      {
+        "summary": "2025年7月某某加油站",
+        "account_code": "500204",
+        "account_path": "行政费用\\行政费用-汽车费用",
+        "tags": {
+          "department": "行政部",
+          "counterparty": "某某加油站",
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "882.34",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "2025年7月某某加油站",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某某储蓄银行",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "882.34"
+      }
+    ],
+    "preparer": "Clian",
+    "reviewer": "Adan",
+    "cashier": null,
+    "bookkeeper": "Miran",
+    "is_system_generated": false,
+    "_injected_anomaly": null
+  },
+  {
+    "voucher_id": "0029",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-08-27",
+    "book": "HK Book",
+    "source_system": "费控服务",
+    "attached_docs_count": 5,
+    "entries": [
+      {
+        "summary": "付款",
+        "account_code": "500201",
+        "account_path": "行政费用\\行政费用-办公费",
+        "tags": {
+          "department": "行政部",
+          "counterparty": "某某差旅代理",
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "28342.67",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "杂费",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某某储蓄银行",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "28342.67"
+      }
+    ],
+    "preparer": "Kesart",
+    "reviewer": "Miran",
+    "cashier": null,
+    "bookkeeper": "Kesart",
+    "is_system_generated": false,
+    "_injected_anomaly": "A6_VAGUE_SUMMARY_LARGE"
+  },
+  {
+    "voucher_id": "0030",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-06-04",
+    "book": "HK Book",
+    "source_system": "总账",
+    "attached_docs_count": 2,
+    "entries": [
+      {
+        "summary": "2025年6月某某停车场",
+        "account_code": "500204",
+        "account_path": "行政费用\\行政费用-汽车费用",
+        "tags": {
+          "department": "行政部",
+          "counterparty": "某某停车场",
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "3273.46",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "2025年6月某某停车场",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某某储蓄银行",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "3273.46"
+      }
+    ],
+    "preparer": "Lochi",
+    "reviewer": "Kesart",
+    "cashier": null,
+    "bookkeeper": "Zeren",
+    "is_system_generated": false,
+    "_injected_anomaly": null
+  },
+  {
+    "voucher_id": "0031",
     "voucher_type": "银行凭证",
     "voucher_date": "2025-07-19",
     "book": "HK Book",
@@ -1112,19 +1448,19 @@
     "attached_docs_count": 4,
     "entries": [
       {
-        "summary": "Clian, 上海市, 差旅费",
+        "summary": "Faye, 深圳市, 差旅费",
         "account_code": "500603",
         "account_path": "业务费用\\业务费用-员工-差旅费（境内）",
         "tags": {
           "department": "战略投资部",
           "counterparty": null,
-          "project_name": null,
-          "personnel": "Clian",
+          "project_name": "Orion",
+          "personnel": "Faye",
           "cash_flow_item": null,
           "bank_file": null,
           "bank_account": null
         },
-        "debit_amount": "7985.63",
+        "debit_amount": "7216.11",
         "credit_amount": "0.00"
       },
       {
@@ -1141,20 +1477,212 @@
           "bank_account": "某银行综合储蓄账户-HKD"
         },
         "debit_amount": "0.00",
-        "credit_amount": "7985.63"
+        "credit_amount": "7216.11"
+      }
+    ],
+    "preparer": "Lochi",
+    "reviewer": "Miran",
+    "cashier": null,
+    "bookkeeper": "Miran",
+    "is_system_generated": false,
+    "_injected_anomaly": null
+  },
+  {
+    "voucher_id": "0032",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-06-04",
+    "book": "HK Book",
+    "source_system": "总账",
+    "attached_docs_count": 3,
+    "entries": [
+      {
+        "summary": "2025年6月某某加油站",
+        "account_code": "500204",
+        "account_path": "行政费用\\行政费用-汽车费用",
+        "tags": {
+          "department": "行政部",
+          "counterparty": "某某加油站",
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "1484.79",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "2025年6月某某加油站",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某银行有限公司",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "1484.79"
+      }
+    ],
+    "preparer": "Adan",
+    "reviewer": "Neris",
+    "cashier": null,
+    "bookkeeper": "Adan",
+    "is_system_generated": false,
+    "_injected_anomaly": null
+  },
+  {
+    "voucher_id": "0033",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-06-04",
+    "book": "HK Book",
+    "source_system": "费控服务",
+    "attached_docs_count": 4,
+    "entries": [
+      {
+        "summary": "Lochi, 上海市, 差旅费",
+        "account_code": "500603",
+        "account_path": "业务费用\\业务费用-员工-差旅费（境内）",
+        "tags": {
+          "department": "战略投资部",
+          "counterparty": null,
+          "project_name": "Orion",
+          "personnel": "Lochi",
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "1767.8",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "差旅费",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某某储蓄银行",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "1767.8"
+      }
+    ],
+    "preparer": "Adan",
+    "reviewer": "Neris",
+    "cashier": null,
+    "bookkeeper": "Zeren",
+    "is_system_generated": false,
+    "_injected_anomaly": null
+  },
+  {
+    "voucher_id": "0034",
+    "voucher_type": "记账凭证",
+    "voucher_date": "2025-07-20",
+    "book": "HK Book",
+    "source_system": "总账",
+    "attached_docs_count": 0,
+    "entries": [
+      {
+        "summary": "月末计提折旧",
+        "account_code": "500201",
+        "account_path": "行政费用\\行政费用-办公费",
+        "tags": {
+          "department": "行政部",
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "11095.54",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "月末计提折旧",
+        "account_code": "500301",
+        "account_path": "管理费用\\累计折旧",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "11095.54"
+      }
+    ],
+    "preparer": "SYSTEM",
+    "reviewer": "Miran",
+    "cashier": null,
+    "bookkeeper": "Lochi",
+    "is_system_generated": true,
+    "_injected_anomaly": null
+  },
+  {
+    "voucher_id": "0035",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-06-06",
+    "book": "HK Book",
+    "source_system": "费控服务",
+    "attached_docs_count": 4,
+    "entries": [
+      {
+        "summary": "某某保险货款",
+        "account_code": "500201",
+        "account_path": "行政费用\\行政费用-办公费",
+        "tags": {
+          "department": "行政部",
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "5059.19",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "某某保险货款",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某银行有限公司",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "5059.19"
       }
     ],
     "preparer": "Neris",
-    "reviewer": "Faye",
+    "reviewer": "Zeren",
     "cashier": null,
-    "bookkeeper": "Kesart",
+    "bookkeeper": "Adan",
     "is_system_generated": false,
-    "_injected_anomaly": "A4_MISSING_PROJECT_TRAVEL"
+    "_injected_anomaly": "A5_MISSING_COUNTERPARTY"
   },
   {
-    "voucher_id": "0025",
+    "voucher_id": "0036",
     "voucher_type": "银行凭证",
-    "voucher_date": "2025-06-25",
+    "voucher_date": "2025-08-19",
     "book": "HK Book",
     "source_system": "总账",
     "attached_docs_count": 0,
@@ -1172,7 +1700,919 @@
           "bank_file": "某银行有限公司",
           "bank_account": "某银行往来账户-HKD"
         },
-        "debit_amount": "82655.13",
+        "debit_amount": "149508.12",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "储蓄户转往来户",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某某储蓄银行",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "149508.12"
+      }
+    ],
+    "preparer": "Lochi",
+    "reviewer": "Neris",
+    "cashier": null,
+    "bookkeeper": "Adan",
+    "is_system_generated": false,
+    "_injected_anomaly": null
+  },
+  {
+    "voucher_id": "0037",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-07-22",
+    "book": "HK Book",
+    "source_system": "费控服务",
+    "attached_docs_count": 5,
+    "entries": [
+      {
+        "summary": "某某办公用品货款",
+        "account_code": "500201",
+        "account_path": "行政费用\\行政费用-办公费",
+        "tags": {
+          "department": "行政部",
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "24404.44",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "某某办公用品货款",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某银行有限公司",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "24404.44"
+      }
+    ],
+    "preparer": "Neris",
+    "reviewer": "Kesart",
+    "cashier": null,
+    "bookkeeper": "Lochi",
+    "is_system_generated": false,
+    "_injected_anomaly": "A5_MISSING_COUNTERPARTY"
+  },
+  {
+    "voucher_id": "0038",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-07-22",
+    "book": "HK Book",
+    "source_system": "费控服务",
+    "attached_docs_count": 5,
+    "entries": [
+      {
+        "summary": "Lochi, 深圳市, 差旅费",
+        "account_code": "500603",
+        "account_path": "业务费用\\业务费用-员工-差旅费（境内）",
+        "tags": {
+          "department": "战略投资部",
+          "counterparty": null,
+          "project_name": "Kestrel",
+          "personnel": "Lochi",
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "4509.22",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "差旅费",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某某储蓄银行",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "4509.22"
+      }
+    ],
+    "preparer": "Faye",
+    "reviewer": "Faye",
+    "cashier": null,
+    "bookkeeper": "Miran",
+    "is_system_generated": false,
+    "_injected_anomaly": null
+  },
+  {
+    "voucher_id": "0039",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-08-05",
+    "book": "HK Book",
+    "source_system": "费控服务",
+    "attached_docs_count": 2,
+    "entries": [
+      {
+        "summary": "Faye, 广州市, 差旅费",
+        "account_code": "500603",
+        "account_path": "业务费用\\业务费用-员工-差旅费（境内）",
+        "tags": {
+          "department": "战略投资部",
+          "counterparty": null,
+          "project_name": null,
+          "personnel": "Faye",
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "3486.5",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "差旅费",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某某储蓄银行",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "3486.5"
+      }
+    ],
+    "preparer": "Miran",
+    "reviewer": "Lochi",
+    "cashier": null,
+    "bookkeeper": "Miran",
+    "is_system_generated": false,
+    "_injected_anomaly": "A4_MISSING_PROJECT_TRAVEL"
+  },
+  {
+    "voucher_id": "0040",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-06-26",
+    "book": "HK Book",
+    "source_system": "总账",
+    "attached_docs_count": 5,
+    "entries": [
+      {
+        "summary": "2025年6月易通行",
+        "account_code": "500204",
+        "account_path": "行政费用\\行政费用-汽车费用",
+        "tags": {
+          "department": "行政部",
+          "counterparty": "易通行",
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "638.64",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "2025年6月易通行",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某某储蓄银行",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "638.64"
+      }
+    ],
+    "preparer": "Zeren",
+    "reviewer": "Faye",
+    "cashier": null,
+    "bookkeeper": "Neris",
+    "is_system_generated": false,
+    "_injected_anomaly": null
+  },
+  {
+    "voucher_id": "0041",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-08-20",
+    "book": "HK Book",
+    "source_system": "总账",
+    "attached_docs_count": 4,
+    "entries": [
+      {
+        "summary": "2025年8月某某停车场",
+        "account_code": "500204",
+        "account_path": "行政费用\\行政费用-汽车费用",
+        "tags": {
+          "department": "行政部",
+          "counterparty": "某某停车场",
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "2589.06",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "2025年8月某某停车场",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某某储蓄银行",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "2589.06"
+      }
+    ],
+    "preparer": "Miran",
+    "reviewer": "Kesart",
+    "cashier": null,
+    "bookkeeper": "Clian",
+    "is_system_generated": false,
+    "_injected_anomaly": null
+  },
+  {
+    "voucher_id": "0042",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-06-14",
+    "book": "HK Book",
+    "source_system": "费控服务",
+    "attached_docs_count": 2,
+    "entries": [
+      {
+        "summary": "某某差旅代理货款",
+        "account_code": "500201",
+        "account_path": "行政费用\\行政费用-办公费",
+        "tags": {
+          "department": "行政部",
+          "counterparty": "某某差旅代理",
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "11156.03",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "某某差旅代理货款",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某某储蓄银行",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "11156.03"
+      }
+    ],
+    "preparer": "Miran",
+    "reviewer": "Zeren",
+    "cashier": null,
+    "bookkeeper": "Faye",
+    "is_system_generated": false,
+    "_injected_anomaly": null
+  },
+  {
+    "voucher_id": "0043",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-06-18",
+    "book": "HK Book",
+    "source_system": "费控服务",
+    "attached_docs_count": 5,
+    "entries": [
+      {
+        "summary": "某某电讯货款",
+        "account_code": "500201",
+        "account_path": "行政费用\\行政费用-办公费",
+        "tags": {
+          "department": "行政部",
+          "counterparty": "某某电讯",
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "38251.39",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "某某电讯货款",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某某储蓄银行",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "38251.39"
+      }
+    ],
+    "preparer": "Faye",
+    "reviewer": "Kesart",
+    "cashier": null,
+    "bookkeeper": "Faye",
+    "is_system_generated": false,
+    "_injected_anomaly": null
+  },
+  {
+    "voucher_id": "0044",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-07-28",
+    "book": "HK Book",
+    "source_system": "总账",
+    "attached_docs_count": 0,
+    "entries": [
+      {
+        "summary": "备付租金-储蓄户转往来户",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某某储蓄银行",
+          "bank_account": "某银行往来账户-HKD"
+        },
+        "debit_amount": "162766.52",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "储蓄户转往来户",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某某储蓄银行",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "162766.52"
+      }
+    ],
+    "preparer": "Miran",
+    "reviewer": "Lochi",
+    "cashier": null,
+    "bookkeeper": "Faye",
+    "is_system_generated": false,
+    "_injected_anomaly": null
+  },
+  {
+    "voucher_id": "0045",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-06-10",
+    "book": "HK Book",
+    "source_system": "总账",
+    "attached_docs_count": 0,
+    "entries": [
+      {
+        "summary": "备付租金-储蓄户转往来户",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某某储蓄银行",
+          "bank_account": "某银行往来账户-HKD"
+        },
+        "debit_amount": "85174.04",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "储蓄户转往来户",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某某储蓄银行",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "85174.04"
+      }
+    ],
+    "preparer": "Zeren",
+    "reviewer": "Kesart",
+    "cashier": null,
+    "bookkeeper": "Kesart",
+    "is_system_generated": false,
+    "_injected_anomaly": null
+  },
+  {
+    "voucher_id": "0046",
+    "voucher_type": "记账凭证",
+    "voucher_date": "2025-06-30",
+    "book": "HK Book",
+    "source_system": "总账",
+    "attached_docs_count": 0,
+    "entries": [
+      {
+        "summary": "月末计提折旧",
+        "account_code": "500201",
+        "account_path": "行政费用\\行政费用-办公费",
+        "tags": {
+          "department": "行政部",
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "6447.32",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "月末计提折旧",
+        "account_code": "500301",
+        "account_path": "管理费用\\累计折旧",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "6447.32"
+      }
+    ],
+    "preparer": "SYSTEM",
+    "reviewer": "Kesart",
+    "cashier": null,
+    "bookkeeper": "Miran",
+    "is_system_generated": true,
+    "_injected_anomaly": null
+  },
+  {
+    "voucher_id": "0047",
+    "voucher_type": "记账凭证",
+    "voucher_date": "2025-06-09",
+    "book": "HK Book",
+    "source_system": "总账",
+    "attached_docs_count": 0,
+    "entries": [
+      {
+        "summary": "月末计提折旧",
+        "account_code": "500201",
+        "account_path": "行政费用\\行政费用-办公费",
+        "tags": {
+          "department": "行政部",
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "6733.81",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "月末计提折旧",
+        "account_code": "500301",
+        "account_path": "管理费用\\累计折旧",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "6733.81"
+      }
+    ],
+    "preparer": "SYSTEM",
+    "reviewer": "Adan",
+    "cashier": null,
+    "bookkeeper": "Faye",
+    "is_system_generated": true,
+    "_injected_anomaly": null
+  },
+  {
+    "voucher_id": "0048",
+    "voucher_type": "记账凭证",
+    "voucher_date": "2025-07-24",
+    "book": "HK Book",
+    "source_system": "总账",
+    "attached_docs_count": 0,
+    "entries": [
+      {
+        "summary": "月末计提折旧",
+        "account_code": "500201",
+        "account_path": "行政费用\\行政费用-办公费",
+        "tags": {
+          "department": "行政部",
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "3560.39",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "月末计提折旧",
+        "account_code": "500301",
+        "account_path": "管理费用\\累计折旧",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "3560.39"
+      }
+    ],
+    "preparer": "SYSTEM",
+    "reviewer": "Neris",
+    "cashier": null,
+    "bookkeeper": "Neris",
+    "is_system_generated": true,
+    "_injected_anomaly": null
+  },
+  {
+    "voucher_id": "0049",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-08-14",
+    "book": "HK Book",
+    "source_system": "费控服务",
+    "attached_docs_count": 5,
+    "entries": [
+      {
+        "summary": "Neris, 广州市, 差旅费",
+        "account_code": "500603",
+        "account_path": "业务费用\\业务费用-员工-差旅费（境内）",
+        "tags": {
+          "department": "战略投资部",
+          "counterparty": null,
+          "project_name": "Aster",
+          "personnel": "Neris",
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "8099.19",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "差旅费",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某某储蓄银行",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "8099.19"
+      }
+    ],
+    "preparer": "Neris",
+    "reviewer": "Miran",
+    "cashier": null,
+    "bookkeeper": "Faye",
+    "is_system_generated": false,
+    "_injected_anomaly": null
+  },
+  {
+    "voucher_id": "0050",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-06-29",
+    "book": "HK Book",
+    "source_system": "总账",
+    "attached_docs_count": 0,
+    "entries": [
+      {
+        "summary": "备付租金-储蓄户转往来户",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某银行有限公司",
+          "bank_account": "某银行往来账户-HKD"
+        },
+        "debit_amount": "115375.4",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "储蓄户转往来户",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某某储蓄银行",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "115375.4"
+      }
+    ],
+    "preparer": "Adan",
+    "reviewer": "Neris",
+    "cashier": null,
+    "bookkeeper": "Kesart",
+    "is_system_generated": false,
+    "_injected_anomaly": null
+  },
+  {
+    "voucher_id": "0051",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-07-30",
+    "book": "HK Book",
+    "source_system": "费控服务",
+    "attached_docs_count": 5,
+    "entries": [
+      {
+        "summary": "付款",
+        "account_code": "500201",
+        "account_path": "行政费用\\行政费用-办公费",
+        "tags": {
+          "department": "行政部",
+          "counterparty": "香港某某租赁",
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "39325.27",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "杂费",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某银行有限公司",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "39325.27"
+      }
+    ],
+    "preparer": "Clian",
+    "reviewer": "Zeren",
+    "cashier": null,
+    "bookkeeper": "Neris",
+    "is_system_generated": false,
+    "_injected_anomaly": "A6_VAGUE_SUMMARY_LARGE"
+  },
+  {
+    "voucher_id": "0052",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-06-24",
+    "book": "HK Book",
+    "source_system": "费控服务",
+    "attached_docs_count": 4,
+    "entries": [
+      {
+        "summary": "Lochi, 上海市, 差旅费",
+        "account_code": "500603",
+        "account_path": "业务费用\\业务费用-员工-差旅费（境内）",
+        "tags": {
+          "department": "战略投资部",
+          "counterparty": null,
+          "project_name": "Aster",
+          "personnel": "Lochi",
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "2981.62",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "差旅费",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某某储蓄银行",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "2981.62"
+      }
+    ],
+    "preparer": "Neris",
+    "reviewer": "Lochi",
+    "cashier": null,
+    "bookkeeper": "Neris",
+    "is_system_generated": false,
+    "_injected_anomaly": null
+  },
+  {
+    "voucher_id": "0053",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-07-03",
+    "book": "HK Book",
+    "source_system": "费控服务",
+    "attached_docs_count": 3,
+    "entries": [
+      {
+        "summary": "Faye, 广州市, 差旅费",
+        "account_code": "500603",
+        "account_path": "业务费用\\业务费用-员工-差旅费（境内）",
+        "tags": {
+          "department": "战略投资部",
+          "counterparty": null,
+          "project_name": "Lenta",
+          "personnel": "Faye",
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "8499.35",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "差旅费",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某某储蓄银行",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "8499.35"
+      }
+    ],
+    "preparer": "Zeren",
+    "reviewer": "Clian",
+    "cashier": null,
+    "bookkeeper": "Clian",
+    "is_system_generated": false,
+    "_injected_anomaly": null
+  },
+  {
+    "voucher_id": "0054",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-07-02",
+    "book": "HK Book",
+    "source_system": "总账",
+    "attached_docs_count": 2,
+    "entries": [
+      {
+        "summary": "2025年7月易通行",
+        "account_code": "500204",
+        "account_path": "行政费用\\行政费用-汽车费用",
+        "tags": {
+          "department": "行政部",
+          "counterparty": "易通行",
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "2364.01",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "2025年7月易通行",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某银行有限公司",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "2364.01"
+      }
+    ],
+    "preparer": "Faye",
+    "reviewer": "Zeren",
+    "cashier": null,
+    "bookkeeper": "Miran",
+    "is_system_generated": false,
+    "_injected_anomaly": null
+  },
+  {
+    "voucher_id": "0055",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-07-30",
+    "book": "HK Book",
+    "source_system": "总账",
+    "attached_docs_count": 0,
+    "entries": [
+      {
+        "summary": "备付租金-储蓄户转往来户",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某银行有限公司",
+          "bank_account": "某银行往来账户-HKD"
+        },
+        "debit_amount": "165034.71",
         "credit_amount": "0.00"
       },
       {
@@ -1189,86 +2629,38 @@
           "bank_account": "某银行综合储蓄账户-HKD"
         },
         "debit_amount": "0.00",
-        "credit_amount": "82655.13"
+        "credit_amount": "165034.71"
       }
     ],
-    "preparer": "Adan",
-    "reviewer": "Clian",
+    "preparer": "Kesart",
+    "reviewer": "Lochi",
     "cashier": null,
-    "bookkeeper": "Clian",
+    "bookkeeper": "Zeren",
     "is_system_generated": false,
     "_injected_anomaly": null
   },
   {
-    "voucher_id": "0026",
+    "voucher_id": "0056",
     "voucher_type": "银行凭证",
     "voucher_date": "2025-08-14",
     "book": "HK Book",
     "source_system": "费控服务",
-    "attached_docs_count": 3,
+    "attached_docs_count": 2,
     "entries": [
       {
-        "summary": "香港某某租赁货款",
-        "account_code": "500201",
-        "account_path": "行政费用\\行政费用-办公费",
-        "tags": {
-          "department": "行政部",
-          "counterparty": "香港某某租赁",
-          "project_name": null,
-          "personnel": null,
-          "cash_flow_item": null,
-          "bank_file": null,
-          "bank_account": null
-        },
-        "debit_amount": "6990.79",
-        "credit_amount": "0.00"
-      },
-      {
-        "summary": "香港某某租赁货款",
-        "account_code": "100201",
-        "account_path": "银行存款\\银行存款-活期",
-        "tags": {
-          "department": null,
-          "counterparty": null,
-          "project_name": null,
-          "personnel": null,
-          "cash_flow_item": "支付其他与经营活动有关的现金",
-          "bank_file": "某银行有限公司",
-          "bank_account": "某银行综合储蓄账户-HKD"
-        },
-        "debit_amount": "0.00",
-        "credit_amount": "6990.79"
-      }
-    ],
-    "preparer": "Zeren",
-    "reviewer": "Zeren",
-    "cashier": null,
-    "bookkeeper": "Miran",
-    "is_system_generated": false,
-    "_injected_anomaly": null
-  },
-  {
-    "voucher_id": "0027",
-    "voucher_type": "银行凭证",
-    "voucher_date": "2025-07-22",
-    "book": "HK Book",
-    "source_system": "费控服务",
-    "attached_docs_count": 6,
-    "entries": [
-      {
-        "summary": "Zeren, 深圳市, 差旅费",
+        "summary": "Lochi, 北京市, 差旅费",
         "account_code": "500603",
         "account_path": "业务费用\\业务费用-员工-差旅费（境内）",
         "tags": {
           "department": "战略投资部",
           "counterparty": null,
           "project_name": "Vela",
-          "personnel": null,
+          "personnel": "Lochi",
           "cash_flow_item": null,
           "bank_file": null,
           "bank_account": null
         },
-        "debit_amount": "5552.43",
+        "debit_amount": "4276.58",
         "credit_amount": "0.00"
       },
       {
@@ -1285,20 +2677,1028 @@
           "bank_account": "某银行综合储蓄账户-HKD"
         },
         "debit_amount": "0.00",
-        "credit_amount": "5552.43"
+        "credit_amount": "4276.58"
       }
     ],
-    "preparer": "Zeren",
-    "reviewer": "Neris",
+    "preparer": "Miran",
+    "reviewer": "Zeren",
+    "cashier": null,
+    "bookkeeper": "Lochi",
+    "is_system_generated": false,
+    "_injected_anomaly": null
+  },
+  {
+    "voucher_id": "0057",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-08-27",
+    "book": "HK Book",
+    "source_system": "费控服务",
+    "attached_docs_count": 6,
+    "entries": [
+      {
+        "summary": "Clian, 北京市, 差旅费",
+        "account_code": "500603",
+        "account_path": "业务费用\\业务费用-员工-差旅费（境内）",
+        "tags": {
+          "department": "战略投资部",
+          "counterparty": null,
+          "project_name": "Kestrel",
+          "personnel": "Clian",
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "6130.65",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "差旅费",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某银行有限公司",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "6130.65"
+      }
+    ],
+    "preparer": "Adan",
+    "reviewer": "Clian",
+    "cashier": null,
+    "bookkeeper": "Neris",
+    "is_system_generated": false,
+    "_injected_anomaly": null
+  },
+  {
+    "voucher_id": "0058",
+    "voucher_type": "记账凭证",
+    "voucher_date": "2025-08-02",
+    "book": "HK Book",
+    "source_system": "总账",
+    "attached_docs_count": 0,
+    "entries": [
+      {
+        "summary": "月末计提折旧",
+        "account_code": "500201",
+        "account_path": "行政费用\\行政费用-办公费",
+        "tags": {
+          "department": "行政部",
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "3949.85",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "月末计提折旧",
+        "account_code": "500301",
+        "account_path": "管理费用\\累计折旧",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "3949.85"
+      }
+    ],
+    "preparer": "SYSTEM",
+    "reviewer": "Adan",
+    "cashier": null,
+    "bookkeeper": "Faye",
+    "is_system_generated": true,
+    "_injected_anomaly": null
+  },
+  {
+    "voucher_id": "0059",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-08-30",
+    "book": "HK Book",
+    "source_system": "总账",
+    "attached_docs_count": 5,
+    "entries": [
+      {
+        "summary": "2025年8月某某加油站",
+        "account_code": "500204",
+        "account_path": "行政费用\\行政费用-汽车费用",
+        "tags": {
+          "department": "行政部",
+          "counterparty": "某某加油站",
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "1028.41",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "2025年8月某某加油站",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某某储蓄银行",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "1028.41"
+      }
+    ],
+    "preparer": "Faye",
+    "reviewer": "Faye",
+    "cashier": null,
+    "bookkeeper": "Neris",
+    "is_system_generated": false,
+    "_injected_anomaly": null
+  },
+  {
+    "voucher_id": "0060",
+    "voucher_type": "记账凭证",
+    "voucher_date": "2025-08-15",
+    "book": "HK Book",
+    "source_system": "总账",
+    "attached_docs_count": 0,
+    "entries": [
+      {
+        "summary": "月末计提折旧",
+        "account_code": "500201",
+        "account_path": "行政费用\\行政费用-办公费",
+        "tags": {
+          "department": "行政部",
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "5415.56",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "月末计提折旧",
+        "account_code": "500301",
+        "account_path": "管理费用\\累计折旧",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "5415.56"
+      }
+    ],
+    "preparer": "SYSTEM",
+    "reviewer": "Miran",
+    "cashier": null,
+    "bookkeeper": "Zeren",
+    "is_system_generated": true,
+    "_injected_anomaly": null
+  },
+  {
+    "voucher_id": "0061",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-07-06",
+    "book": "HK Book",
+    "source_system": "费控服务",
+    "attached_docs_count": 4,
+    "entries": [
+      {
+        "summary": "某某差旅代理货款",
+        "account_code": "500201",
+        "account_path": "行政费用\\行政费用-办公费",
+        "tags": {
+          "department": "行政部",
+          "counterparty": "某某差旅代理",
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "31266.67",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "某某差旅代理货款",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某某储蓄银行",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "31266.67"
+      }
+    ],
+    "preparer": "Clian",
+    "reviewer": "Faye",
     "cashier": null,
     "bookkeeper": "Adan",
+    "is_system_generated": false,
+    "_injected_anomaly": null
+  },
+  {
+    "voucher_id": "0062",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-06-24",
+    "book": "HK Book",
+    "source_system": "费控服务",
+    "attached_docs_count": 4,
+    "entries": [
+      {
+        "summary": "某某差旅代理货款",
+        "account_code": "500201",
+        "account_path": "行政费用\\行政费用-办公费",
+        "tags": {
+          "department": "行政部",
+          "counterparty": "某某差旅代理",
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "17418.87",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "某某差旅代理货款",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某某储蓄银行",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "17418.87"
+      }
+    ],
+    "preparer": "Lochi",
+    "reviewer": "Lochi",
+    "cashier": null,
+    "bookkeeper": "Clian",
+    "is_system_generated": false,
+    "_injected_anomaly": null
+  },
+  {
+    "voucher_id": "0063",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-08-06",
+    "book": "HK Book",
+    "source_system": "总账",
+    "attached_docs_count": 4,
+    "entries": [
+      {
+        "summary": "2025年8月易通行",
+        "account_code": "500204",
+        "account_path": "行政费用\\行政费用-汽车费用",
+        "tags": {
+          "department": "行政部",
+          "counterparty": "易通行",
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "1224.07",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "2025年8月易通行",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某某储蓄银行",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "1224.07"
+      }
+    ],
+    "preparer": "Miran",
+    "reviewer": "Faye",
+    "cashier": null,
+    "bookkeeper": "Faye",
+    "is_system_generated": false,
+    "_injected_anomaly": null
+  },
+  {
+    "voucher_id": "0064",
+    "voucher_type": "记账凭证",
+    "voucher_date": "2025-07-28",
+    "book": "HK Book",
+    "source_system": "总账",
+    "attached_docs_count": 0,
+    "entries": [
+      {
+        "summary": "月末计提折旧",
+        "account_code": "500201",
+        "account_path": "行政费用\\行政费用-办公费",
+        "tags": {
+          "department": "行政部",
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "10136.4",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "月末计提折旧",
+        "account_code": "500301",
+        "account_path": "管理费用\\累计折旧",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "10136.4"
+      }
+    ],
+    "preparer": "SYSTEM",
+    "reviewer": "Zeren",
+    "cashier": null,
+    "bookkeeper": "Lochi",
+    "is_system_generated": true,
+    "_injected_anomaly": null
+  },
+  {
+    "voucher_id": "0065",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-06-29",
+    "book": "HK Book",
+    "source_system": "费控服务",
+    "attached_docs_count": 0,
+    "entries": [
+      {
+        "summary": "某某保险货款",
+        "account_code": "500201",
+        "account_path": "行政费用\\行政费用-办公费",
+        "tags": {
+          "department": "行政部",
+          "counterparty": "某某保险",
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "29212.55",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "某某保险货款",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某某储蓄银行",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "29212.55"
+      }
+    ],
+    "preparer": "Faye",
+    "reviewer": "Adan",
+    "cashier": null,
+    "bookkeeper": "Neris",
+    "is_system_generated": false,
+    "_injected_anomaly": "A1_MISSING_DOCS_EXPENSE"
+  },
+  {
+    "voucher_id": "0066",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-08-10",
+    "book": "HK Book",
+    "source_system": "总账",
+    "attached_docs_count": 0,
+    "entries": [
+      {
+        "summary": "备付租金-储蓄户转往来户",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某某储蓄银行",
+          "bank_account": "某银行往来账户-HKD"
+        },
+        "debit_amount": "102771.58",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "储蓄户转往来户",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某某储蓄银行",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "102771.58"
+      }
+    ],
+    "preparer": "Lochi",
+    "reviewer": "Lochi",
+    "cashier": null,
+    "bookkeeper": "Miran",
+    "is_system_generated": false,
+    "_injected_anomaly": null
+  },
+  {
+    "voucher_id": "0067",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-06-16",
+    "book": "HK Book",
+    "source_system": "费控服务",
+    "attached_docs_count": 3,
+    "entries": [
+      {
+        "summary": "Miran, 广州市, 差旅费",
+        "account_code": "500603",
+        "account_path": "业务费用\\业务费用-员工-差旅费（境内）",
+        "tags": {
+          "department": "战略投资部",
+          "counterparty": null,
+          "project_name": null,
+          "personnel": "Miran",
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "6700.17",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "差旅费",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某银行有限公司",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "6700.17"
+      }
+    ],
+    "preparer": "Miran",
+    "reviewer": "Faye",
+    "cashier": null,
+    "bookkeeper": "Lochi",
+    "is_system_generated": false,
+    "_injected_anomaly": "A4_MISSING_PROJECT_TRAVEL"
+  },
+  {
+    "voucher_id": "0068",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-08-15",
+    "book": "HK Book",
+    "source_system": "总账",
+    "attached_docs_count": 0,
+    "entries": [
+      {
+        "summary": "备付租金-储蓄户转往来户",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某银行有限公司",
+          "bank_account": "某银行往来账户-HKD"
+        },
+        "debit_amount": "197076.59",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "储蓄户转往来户",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某某储蓄银行",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "197076.59"
+      }
+    ],
+    "preparer": "Miran",
+    "reviewer": "Adan",
+    "cashier": null,
+    "bookkeeper": "Kesart",
+    "is_system_generated": false,
+    "_injected_anomaly": null
+  },
+  {
+    "voucher_id": "0069",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-07-09",
+    "book": "HK Book",
+    "source_system": "费控服务",
+    "attached_docs_count": 6,
+    "entries": [
+      {
+        "summary": "Clian, 深圳市, 差旅费",
+        "account_code": "500603",
+        "account_path": "业务费用\\业务费用-员工-差旅费（境内）",
+        "tags": {
+          "department": "战略投资部",
+          "counterparty": null,
+          "project_name": "Vela",
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "3420.18",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "差旅费",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某银行有限公司",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "3420.18"
+      }
+    ],
+    "preparer": "Lochi",
+    "reviewer": "Kesart",
+    "cashier": null,
+    "bookkeeper": "Faye",
     "is_system_generated": false,
     "_injected_anomaly": "A3_MISSING_PERSONNEL_TRAVEL"
   },
   {
-    "voucher_id": "0028",
+    "voucher_id": "0070",
     "voucher_type": "银行凭证",
-    "voucher_date": "2025-07-04",
+    "voucher_date": "2025-06-14",
+    "book": "HK Book",
+    "source_system": "费控服务",
+    "attached_docs_count": 2,
+    "entries": [
+      {
+        "summary": "Lochi, 北京市, 差旅费",
+        "account_code": "500603",
+        "account_path": "业务费用\\业务费用-员工-差旅费（境内）",
+        "tags": {
+          "department": "战略投资部",
+          "counterparty": null,
+          "project_name": "Aster",
+          "personnel": "Lochi",
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "4583.28",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "差旅费",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某银行有限公司",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "4583.28"
+      }
+    ],
+    "preparer": "Lochi",
+    "reviewer": "Faye",
+    "cashier": null,
+    "bookkeeper": "Zeren",
+    "is_system_generated": false,
+    "_injected_anomaly": null
+  },
+  {
+    "voucher_id": "0071",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-06-09",
+    "book": "HK Book",
+    "source_system": "费控服务",
+    "attached_docs_count": 3,
+    "entries": [
+      {
+        "summary": "某某会计师事务所货款",
+        "account_code": "500201",
+        "account_path": "行政费用\\行政费用-办公费",
+        "tags": {
+          "department": "行政部",
+          "counterparty": "某某会计师事务所",
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "7592.88",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "某某会计师事务所货款",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某银行有限公司",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "7592.88"
+      }
+    ],
+    "preparer": "Kesart",
+    "reviewer": "Lochi",
+    "cashier": null,
+    "bookkeeper": "Zeren",
+    "is_system_generated": false,
+    "_injected_anomaly": null
+  },
+  {
+    "voucher_id": "0072",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-07-02",
+    "book": "HK Book",
+    "source_system": "总账",
+    "attached_docs_count": 5,
+    "entries": [
+      {
+        "summary": "2025年7月易通行",
+        "account_code": "500204",
+        "account_path": "行政费用\\行政费用-汽车费用",
+        "tags": {
+          "department": "行政部",
+          "counterparty": "易通行",
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "30000.00",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "2025年7月易通行",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某某储蓄银行",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "30000.00"
+      }
+    ],
+    "preparer": "Miran",
+    "reviewer": "Neris",
+    "cashier": null,
+    "bookkeeper": "Faye",
+    "is_system_generated": false,
+    "_injected_anomaly": "A2_MANUAL_ENTRY_LARGE"
+  },
+  {
+    "voucher_id": "0073",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-07-27",
+    "book": "HK Book",
+    "source_system": "总账",
+    "attached_docs_count": 0,
+    "entries": [
+      {
+        "summary": "备付租金-储蓄户转往来户",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某某储蓄银行",
+          "bank_account": "某银行往来账户-HKD"
+        },
+        "debit_amount": "179025.0",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "储蓄户转往来户",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某某储蓄银行",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "179025.0"
+      }
+    ],
+    "preparer": "Clian",
+    "reviewer": "Zeren",
+    "cashier": null,
+    "bookkeeper": "Miran",
+    "is_system_generated": false,
+    "_injected_anomaly": null
+  },
+  {
+    "voucher_id": "0074",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-08-20",
+    "book": "HK Book",
+    "source_system": "费控服务",
+    "attached_docs_count": 3,
+    "entries": [
+      {
+        "summary": "付款",
+        "account_code": "500201",
+        "account_path": "行政费用\\行政费用-办公费",
+        "tags": {
+          "department": "行政部",
+          "counterparty": "某某差旅代理",
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "14262.61",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "费用",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某银行有限公司",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "14262.61"
+      }
+    ],
+    "preparer": "Miran",
+    "reviewer": "Kesart",
+    "cashier": null,
+    "bookkeeper": "Zeren",
+    "is_system_generated": false,
+    "_injected_anomaly": "A6_VAGUE_SUMMARY_LARGE"
+  },
+  {
+    "voucher_id": "0075",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-07-23",
+    "book": "HK Book",
+    "source_system": "费控服务",
+    "attached_docs_count": 4,
+    "entries": [
+      {
+        "summary": "某某会计师事务所货款",
+        "account_code": "500201",
+        "account_path": "行政费用\\行政费用-办公费",
+        "tags": {
+          "department": "行政部",
+          "counterparty": "某某会计师事务所",
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "15194.08",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "某某会计师事务所货款",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某银行有限公司",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "15194.08"
+      }
+    ],
+    "preparer": "Lochi",
+    "reviewer": "Faye",
+    "cashier": null,
+    "bookkeeper": "Zeren",
+    "is_system_generated": false,
+    "_injected_anomaly": null
+  },
+  {
+    "voucher_id": "0076",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-08-27",
+    "book": "HK Book",
+    "source_system": "总账",
+    "attached_docs_count": 4,
+    "entries": [
+      {
+        "summary": "2025年8月易通行",
+        "account_code": "500204",
+        "account_path": "行政费用\\行政费用-汽车费用",
+        "tags": {
+          "department": "行政部",
+          "counterparty": "易通行",
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "30000.00",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "2025年8月易通行",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某银行有限公司",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "30000.00"
+      }
+    ],
+    "preparer": "Zeren",
+    "reviewer": "Miran",
+    "cashier": null,
+    "bookkeeper": "Kesart",
+    "is_system_generated": false,
+    "_injected_anomaly": "A2_MANUAL_ENTRY_LARGE"
+  },
+  {
+    "voucher_id": "0077",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-07-05",
+    "book": "HK Book",
+    "source_system": "总账",
+    "attached_docs_count": 5,
+    "entries": [
+      {
+        "summary": "2025年7月易通行",
+        "account_code": "500204",
+        "account_path": "行政费用\\行政费用-汽车费用",
+        "tags": {
+          "department": "行政部",
+          "counterparty": "易通行",
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "678.91",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "2025年7月易通行",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某某储蓄银行",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "678.91"
+      }
+    ],
+    "preparer": "Lochi",
+    "reviewer": "Faye",
+    "cashier": null,
+    "bookkeeper": "Zeren",
+    "is_system_generated": false,
+    "_injected_anomaly": null
+  },
+  {
+    "voucher_id": "0078",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-07-30",
     "book": "HK Book",
     "source_system": "总账",
     "attached_docs_count": 3,
@@ -1316,7 +3716,7 @@
           "bank_file": null,
           "bank_account": null
         },
-        "debit_amount": "2648.58",
+        "debit_amount": "30000.00",
         "credit_amount": "0.00"
       },
       {
@@ -1329,72 +3729,120 @@
           "project_name": null,
           "personnel": null,
           "cash_flow_item": "支付其他与经营活动有关的现金",
-          "bank_file": "某银行有限公司",
+          "bank_file": "某某储蓄银行",
           "bank_account": "某银行综合储蓄账户-HKD"
         },
         "debit_amount": "0.00",
-        "credit_amount": "2648.58"
-      }
-    ],
-    "preparer": "Neris",
-    "reviewer": "Kesart",
-    "cashier": null,
-    "bookkeeper": "Lochi",
-    "is_system_generated": false,
-    "_injected_anomaly": null
-  },
-  {
-    "voucher_id": "0029",
-    "voucher_type": "银行凭证",
-    "voucher_date": "2025-07-29",
-    "book": "HK Book",
-    "source_system": "总账",
-    "attached_docs_count": 0,
-    "entries": [
-      {
-        "summary": "备付租金-储蓄户转往来户",
-        "account_code": "100201",
-        "account_path": "银行存款\\银行存款-活期",
-        "tags": {
-          "department": null,
-          "counterparty": null,
-          "project_name": null,
-          "personnel": null,
-          "cash_flow_item": "支付其他与经营活动有关的现金",
-          "bank_file": "某银行有限公司",
-          "bank_account": "某银行往来账户-HKD"
-        },
-        "debit_amount": "189352.75",
-        "credit_amount": "0.00"
-      },
-      {
-        "summary": "储蓄户转往来户",
-        "account_code": "100201",
-        "account_path": "银行存款\\银行存款-活期",
-        "tags": {
-          "department": null,
-          "counterparty": null,
-          "project_name": null,
-          "personnel": null,
-          "cash_flow_item": "支付其他与经营活动有关的现金",
-          "bank_file": "某银行有限公司",
-          "bank_account": "某银行综合储蓄账户-HKD"
-        },
-        "debit_amount": "0.00",
-        "credit_amount": "189352.75"
+        "credit_amount": "30000.00"
       }
     ],
     "preparer": "Faye",
-    "reviewer": "Zeren",
+    "reviewer": "Faye",
     "cashier": null,
     "bookkeeper": "Zeren",
     "is_system_generated": false,
-    "_injected_anomaly": null
+    "_injected_anomaly": "A2_MANUAL_ENTRY_LARGE"
   },
   {
-    "voucher_id": "0030",
+    "voucher_id": "0079",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-08-16",
+    "book": "HK Book",
+    "source_system": "费控服务",
+    "attached_docs_count": 2,
+    "entries": [
+      {
+        "summary": "Clian, 上海市, 差旅费",
+        "account_code": "500603",
+        "account_path": "业务费用\\业务费用-员工-差旅费（境内）",
+        "tags": {
+          "department": "战略投资部",
+          "counterparty": null,
+          "project_name": "Aster",
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "5726.0",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "差旅费",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某银行有限公司",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "5726.0"
+      }
+    ],
+    "preparer": "Miran",
+    "reviewer": "Clian",
+    "cashier": null,
+    "bookkeeper": "Lochi",
+    "is_system_generated": false,
+    "_injected_anomaly": "A3_MISSING_PERSONNEL_TRAVEL"
+  },
+  {
+    "voucher_id": "0080",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-08-13",
+    "book": "HK Book",
+    "source_system": "总账",
+    "attached_docs_count": 4,
+    "entries": [
+      {
+        "summary": "2025年8月易通行",
+        "account_code": "500204",
+        "account_path": "行政费用\\行政费用-汽车费用",
+        "tags": {
+          "department": "行政部",
+          "counterparty": "易通行",
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "30000.00",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "2025年8月易通行",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某银行有限公司",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "30000.00"
+      }
+    ],
+    "preparer": "Faye",
+    "reviewer": "Lochi",
+    "cashier": null,
+    "bookkeeper": "Kesart",
+    "is_system_generated": false,
+    "_injected_anomaly": "A2_MANUAL_ENTRY_LARGE"
+  },
+  {
+    "voucher_id": "0081",
     "voucher_type": "记账凭证",
-    "voucher_date": "2025-08-08",
+    "voucher_date": "2025-08-14",
     "book": "HK Book",
     "source_system": "总账",
     "attached_docs_count": 0,
@@ -1412,7 +3860,7 @@
           "bank_file": null,
           "bank_account": null
         },
-        "debit_amount": "4918.39",
+        "debit_amount": "6922.96",
         "credit_amount": "0.00"
       },
       {
@@ -1429,14 +3877,926 @@
           "bank_account": null
         },
         "debit_amount": "0.00",
-        "credit_amount": "4918.39"
+        "credit_amount": "6922.96"
       }
     ],
     "preparer": "SYSTEM",
-    "reviewer": "Lochi",
+    "reviewer": "Faye",
     "cashier": null,
-    "bookkeeper": "Kesart",
+    "bookkeeper": "Zeren",
     "is_system_generated": true,
     "_injected_anomaly": null
+  },
+  {
+    "voucher_id": "0082",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-07-31",
+    "book": "HK Book",
+    "source_system": "总账",
+    "attached_docs_count": 0,
+    "entries": [
+      {
+        "summary": "备付租金-储蓄户转往来户",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某某储蓄银行",
+          "bank_account": "某银行往来账户-HKD"
+        },
+        "debit_amount": "111252.21",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "储蓄户转往来户",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某银行有限公司",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "111252.21"
+      }
+    ],
+    "preparer": "Kesart",
+    "reviewer": "Adan",
+    "cashier": null,
+    "bookkeeper": "Neris",
+    "is_system_generated": false,
+    "_injected_anomaly": null
+  },
+  {
+    "voucher_id": "0083",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-08-28",
+    "book": "HK Book",
+    "source_system": "费控服务",
+    "attached_docs_count": 2,
+    "entries": [
+      {
+        "summary": "某某办公用品货款",
+        "account_code": "500201",
+        "account_path": "行政费用\\行政费用-办公费",
+        "tags": {
+          "department": "行政部",
+          "counterparty": "某某办公用品",
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "28190.42",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "某某办公用品货款",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某某储蓄银行",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "28190.42"
+      }
+    ],
+    "preparer": "Faye",
+    "reviewer": "Zeren",
+    "cashier": null,
+    "bookkeeper": "Adan",
+    "is_system_generated": false,
+    "_injected_anomaly": null
+  },
+  {
+    "voucher_id": "0084",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-07-03",
+    "book": "HK Book",
+    "source_system": "费控服务",
+    "attached_docs_count": 0,
+    "entries": [
+      {
+        "summary": "某某电讯货款",
+        "account_code": "500201",
+        "account_path": "行政费用\\行政费用-办公费",
+        "tags": {
+          "department": "行政部",
+          "counterparty": "某某电讯",
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "9057.26",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "某某电讯货款",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某某储蓄银行",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "9057.26"
+      }
+    ],
+    "preparer": "Faye",
+    "reviewer": "Neris",
+    "cashier": null,
+    "bookkeeper": "Clian",
+    "is_system_generated": false,
+    "_injected_anomaly": "A1_MISSING_DOCS_EXPENSE"
+  },
+  {
+    "voucher_id": "0085",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-06-25",
+    "book": "HK Book",
+    "source_system": "费控服务",
+    "attached_docs_count": 3,
+    "entries": [
+      {
+        "summary": "Adan, 北京市, 差旅费",
+        "account_code": "500603",
+        "account_path": "业务费用\\业务费用-员工-差旅费（境内）",
+        "tags": {
+          "department": "战略投资部",
+          "counterparty": null,
+          "project_name": null,
+          "personnel": "Adan",
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "5877.86",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "差旅费",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某银行有限公司",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "5877.86"
+      }
+    ],
+    "preparer": "Lochi",
+    "reviewer": "Kesart",
+    "cashier": null,
+    "bookkeeper": "Lochi",
+    "is_system_generated": false,
+    "_injected_anomaly": "A4_MISSING_PROJECT_TRAVEL"
+  },
+  {
+    "voucher_id": "0086",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-07-27",
+    "book": "HK Book",
+    "source_system": "费控服务",
+    "attached_docs_count": 3,
+    "entries": [
+      {
+        "summary": "上海某某物业管理有限公司货款",
+        "account_code": "500201",
+        "account_path": "行政费用\\行政费用-办公费",
+        "tags": {
+          "department": "行政部",
+          "counterparty": "上海某某物业管理有限公司",
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "6010.43",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "上海某某物业管理有限公司货款",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某银行有限公司",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "6010.43"
+      }
+    ],
+    "preparer": "Lochi",
+    "reviewer": "Clian",
+    "cashier": null,
+    "bookkeeper": "Neris",
+    "is_system_generated": false,
+    "_injected_anomaly": null
+  },
+  {
+    "voucher_id": "0087",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-06-12",
+    "book": "HK Book",
+    "source_system": "总账",
+    "attached_docs_count": 2,
+    "entries": [
+      {
+        "summary": "2025年6月易通行",
+        "account_code": "500204",
+        "account_path": "行政费用\\行政费用-汽车费用",
+        "tags": {
+          "department": "行政部",
+          "counterparty": "易通行",
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "1884.34",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "2025年6月易通行",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某银行有限公司",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "1884.34"
+      }
+    ],
+    "preparer": "Faye",
+    "reviewer": "Lochi",
+    "cashier": null,
+    "bookkeeper": "Lochi",
+    "is_system_generated": false,
+    "_injected_anomaly": null
+  },
+  {
+    "voucher_id": "0088",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-07-24",
+    "book": "HK Book",
+    "source_system": "费控服务",
+    "attached_docs_count": 5,
+    "entries": [
+      {
+        "summary": "付款",
+        "account_code": "500201",
+        "account_path": "行政费用\\行政费用-办公费",
+        "tags": {
+          "department": "行政部",
+          "counterparty": "某某会计师事务所",
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "39308.56",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "费用",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某银行有限公司",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "39308.56"
+      }
+    ],
+    "preparer": "Kesart",
+    "reviewer": "Neris",
+    "cashier": null,
+    "bookkeeper": "Miran",
+    "is_system_generated": false,
+    "_injected_anomaly": "A6_VAGUE_SUMMARY_LARGE"
+  },
+  {
+    "voucher_id": "0089",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-07-06",
+    "book": "HK Book",
+    "source_system": "费控服务",
+    "attached_docs_count": 2,
+    "entries": [
+      {
+        "summary": "某某电讯货款",
+        "account_code": "500201",
+        "account_path": "行政费用\\行政费用-办公费",
+        "tags": {
+          "department": "行政部",
+          "counterparty": "某某电讯",
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "37698.69",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "某某电讯货款",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某某储蓄银行",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "37698.69"
+      }
+    ],
+    "preparer": "Lochi",
+    "reviewer": "Lochi",
+    "cashier": null,
+    "bookkeeper": "Faye",
+    "is_system_generated": false,
+    "_injected_anomaly": null
+  },
+  {
+    "voucher_id": "0090",
+    "voucher_type": "记账凭证",
+    "voucher_date": "2025-06-20",
+    "book": "HK Book",
+    "source_system": "总账",
+    "attached_docs_count": 0,
+    "entries": [
+      {
+        "summary": "月末计提折旧",
+        "account_code": "500201",
+        "account_path": "行政费用\\行政费用-办公费",
+        "tags": {
+          "department": "行政部",
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "7018.93",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "月末计提折旧",
+        "account_code": "500301",
+        "account_path": "管理费用\\累计折旧",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "7018.93"
+      }
+    ],
+    "preparer": "SYSTEM",
+    "reviewer": "Faye",
+    "cashier": null,
+    "bookkeeper": "Adan",
+    "is_system_generated": true,
+    "_injected_anomaly": null
+  },
+  {
+    "voucher_id": "0091",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-07-13",
+    "book": "HK Book",
+    "source_system": "费控服务",
+    "attached_docs_count": 3,
+    "entries": [
+      {
+        "summary": "某某保险货款",
+        "account_code": "500201",
+        "account_path": "行政费用\\行政费用-办公费",
+        "tags": {
+          "department": "行政部",
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "20937.06",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "某某保险货款",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某某储蓄银行",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "20937.06"
+      }
+    ],
+    "preparer": "Miran",
+    "reviewer": "Neris",
+    "cashier": null,
+    "bookkeeper": "Miran",
+    "is_system_generated": false,
+    "_injected_anomaly": "A5_MISSING_COUNTERPARTY"
+  },
+  {
+    "voucher_id": "0092",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-07-23",
+    "book": "HK Book",
+    "source_system": "费控服务",
+    "attached_docs_count": 5,
+    "entries": [
+      {
+        "summary": "Adan, 北京市, 差旅费",
+        "account_code": "500603",
+        "account_path": "业务费用\\业务费用-员工-差旅费（境内）",
+        "tags": {
+          "department": "战略投资部",
+          "counterparty": null,
+          "project_name": "Aster",
+          "personnel": "Adan",
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "4202.55",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "差旅费",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某银行有限公司",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "4202.55"
+      }
+    ],
+    "preparer": "Clian",
+    "reviewer": "Kesart",
+    "cashier": null,
+    "bookkeeper": "Adan",
+    "is_system_generated": false,
+    "_injected_anomaly": null
+  },
+  {
+    "voucher_id": "0093",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-06-13",
+    "book": "HK Book",
+    "source_system": "费控服务",
+    "attached_docs_count": 2,
+    "entries": [
+      {
+        "summary": "上海某某物业管理有限公司货款",
+        "account_code": "500201",
+        "account_path": "行政费用\\行政费用-办公费",
+        "tags": {
+          "department": "行政部",
+          "counterparty": "上海某某物业管理有限公司",
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "23408.29",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "上海某某物业管理有限公司货款",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某某储蓄银行",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "23408.29"
+      }
+    ],
+    "preparer": "Kesart",
+    "reviewer": "Neris",
+    "cashier": null,
+    "bookkeeper": "Kesart",
+    "is_system_generated": false,
+    "_injected_anomaly": null
+  },
+  {
+    "voucher_id": "0094",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-06-10",
+    "book": "HK Book",
+    "source_system": "费控服务",
+    "attached_docs_count": 2,
+    "entries": [
+      {
+        "summary": "某某办公用品货款",
+        "account_code": "500201",
+        "account_path": "行政费用\\行政费用-办公费",
+        "tags": {
+          "department": "行政部",
+          "counterparty": "某某办公用品",
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "16849.64",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "某某办公用品货款",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某某储蓄银行",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "16849.64"
+      }
+    ],
+    "preparer": "Adan",
+    "reviewer": "Neris",
+    "cashier": null,
+    "bookkeeper": "Adan",
+    "is_system_generated": false,
+    "_injected_anomaly": null
+  },
+  {
+    "voucher_id": "0095",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-08-20",
+    "book": "HK Book",
+    "source_system": "费控服务",
+    "attached_docs_count": 4,
+    "entries": [
+      {
+        "summary": "易通行货款",
+        "account_code": "500201",
+        "account_path": "行政费用\\行政费用-办公费",
+        "tags": {
+          "department": "行政部",
+          "counterparty": "易通行",
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "26611.08",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "易通行货款",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某银行有限公司",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "26611.08"
+      }
+    ],
+    "preparer": "Miran",
+    "reviewer": "Zeren",
+    "cashier": null,
+    "bookkeeper": "Neris",
+    "is_system_generated": false,
+    "_injected_anomaly": null
+  },
+  {
+    "voucher_id": "0096",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-06-13",
+    "book": "HK Book",
+    "source_system": "费控服务",
+    "attached_docs_count": 4,
+    "entries": [
+      {
+        "summary": "Faye, 上海市, 差旅费",
+        "account_code": "500603",
+        "account_path": "业务费用\\业务费用-员工-差旅费（境内）",
+        "tags": {
+          "department": "战略投资部",
+          "counterparty": null,
+          "project_name": "Orion",
+          "personnel": "Faye",
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "7823.97",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "差旅费",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某银行有限公司",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "7823.97"
+      }
+    ],
+    "preparer": "Clian",
+    "reviewer": "Lochi",
+    "cashier": null,
+    "bookkeeper": "Adan",
+    "is_system_generated": false,
+    "_injected_anomaly": null
+  },
+  {
+    "voucher_id": "0097",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-07-18",
+    "book": "HK Book",
+    "source_system": "费控服务",
+    "attached_docs_count": 0,
+    "entries": [
+      {
+        "summary": "某某保险货款",
+        "account_code": "500201",
+        "account_path": "行政费用\\行政费用-办公费",
+        "tags": {
+          "department": "行政部",
+          "counterparty": "某某保险",
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "10094.94",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "某某保险货款",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某某储蓄银行",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "10094.94"
+      }
+    ],
+    "preparer": "Kesart",
+    "reviewer": "Kesart",
+    "cashier": null,
+    "bookkeeper": "Zeren",
+    "is_system_generated": false,
+    "_injected_anomaly": "A1_MISSING_DOCS_EXPENSE"
+  },
+  {
+    "voucher_id": "0098",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-08-18",
+    "book": "HK Book",
+    "source_system": "费控服务",
+    "attached_docs_count": 3,
+    "entries": [
+      {
+        "summary": "某某差旅代理货款",
+        "account_code": "500201",
+        "account_path": "行政费用\\行政费用-办公费",
+        "tags": {
+          "department": "行政部",
+          "counterparty": "某某差旅代理",
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "22418.35",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "某某差旅代理货款",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某银行有限公司",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "22418.35"
+      }
+    ],
+    "preparer": "Faye",
+    "reviewer": "Lochi",
+    "cashier": null,
+    "bookkeeper": "Faye",
+    "is_system_generated": false,
+    "_injected_anomaly": null
+  },
+  {
+    "voucher_id": "0099",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-07-03",
+    "book": "HK Book",
+    "source_system": "费控服务",
+    "attached_docs_count": 6,
+    "entries": [
+      {
+        "summary": "Faye, 深圳市, 差旅费",
+        "account_code": "500603",
+        "account_path": "业务费用\\业务费用-员工-差旅费（境内）",
+        "tags": {
+          "department": "战略投资部",
+          "counterparty": null,
+          "project_name": "Kestrel",
+          "personnel": "Faye",
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "2017.03",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "差旅费",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某某储蓄银行",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "2017.03"
+      }
+    ],
+    "preparer": "Lochi",
+    "reviewer": "Neris",
+    "cashier": null,
+    "bookkeeper": "Lochi",
+    "is_system_generated": false,
+    "_injected_anomaly": null
+  },
+  {
+    "voucher_id": "0100",
+    "voucher_type": "银行凭证",
+    "voucher_date": "2025-07-29",
+    "book": "HK Book",
+    "source_system": "费控服务",
+    "attached_docs_count": 5,
+    "entries": [
+      {
+        "summary": "支出",
+        "account_code": "500201",
+        "account_path": "行政费用\\行政费用-办公费",
+        "tags": {
+          "department": "行政部",
+          "counterparty": "某某办公用品",
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": null,
+          "bank_file": null,
+          "bank_account": null
+        },
+        "debit_amount": "11972.59",
+        "credit_amount": "0.00"
+      },
+      {
+        "summary": "支出",
+        "account_code": "100201",
+        "account_path": "银行存款\\银行存款-活期",
+        "tags": {
+          "department": null,
+          "counterparty": null,
+          "project_name": null,
+          "personnel": null,
+          "cash_flow_item": "支付其他与经营活动有关的现金",
+          "bank_file": "某某储蓄银行",
+          "bank_account": "某银行综合储蓄账户-HKD"
+        },
+        "debit_amount": "0.00",
+        "credit_amount": "11972.59"
+      }
+    ],
+    "preparer": "Zeren",
+    "reviewer": "Miran",
+    "cashier": null,
+    "bookkeeper": "Neris",
+    "is_system_generated": false,
+    "_injected_anomaly": "A6_VAGUE_SUMMARY_LARGE"
   }
 ]

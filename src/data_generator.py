@@ -319,7 +319,7 @@ def generate_dataset(n: int = 30, seed: int = 42) -> List[dict]:
     plan = (
         [("clean", None)] * int(n * 0.6)
         + [("system", None)] * int(n * 0.1)
-        + [("anomalous", k) for k in list(ANOMALY_INJECTORS.keys()) * 3][: n - int(n * 0.6) - int(n * 0.1)]
+        + [("anomalous", k) for k in list(ANOMALY_INJECTORS.keys()) * 20][: n - int(n * 0.6) - int(n * 0.1)]
     )
     random.shuffle(plan)
 
@@ -359,7 +359,7 @@ def generate_dataset(n: int = 30, seed: int = 42) -> List[dict]:
 def main():
     out_dir = Path(__file__).parent.parent / "data"
     out_dir.mkdir(exist_ok=True)
-    dataset = generate_dataset(n=30, seed=42)
+    dataset = generate_dataset(n=100, seed=42)
     out_path = out_dir / "sample_vouchers.json"
     out_path.write_text(json.dumps(dataset, ensure_ascii=False, indent=2, default=str), encoding="utf-8")
 

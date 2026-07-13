@@ -1,0 +1,1682 @@
+[
+  {
+    "voucher_id": "0001",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0001",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "该凭证为同一银行内部不同账户之间的资金调拨（储蓄户转往来户），借贷平衡，摘要与业务一致，规则引擎未标记任何问题，属于正常财务操作。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0002",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0002",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "凭证借贷平衡，摘要与科目匹配（停车场费用归入汽车费用科目合理），附单据5张，tag齐全，金额正常。规则引擎未标记任何问题，未发现语义级异常。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0003",
+    "injected_anomaly": "A4_MISSING_PROJECT_TRAVEL",
+    "rule_flags": [
+      {
+        "rule_id": "R005",
+        "severity": "yellow",
+        "title": "差旅费缺少【项目名称】"
+      }
+    ],
+    "llm_assessment": {
+      "voucher_id": "0003",
+      "overall_assessment": "suspicious",
+      "concerns": [],
+      "recommended_action": "human_review",
+      "confidence": 0.85,
+      "notes_to_reviewer": "规则引擎已标记 R005 YELLOW（差旅费缺少项目名称），同意该判断。建议补充项目名称 tag 以便归集项目成本。"
+    },
+    "bucket": "TP",
+    "success": true
+  },
+  {
+    "voucher_id": "0004",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0004",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "规则引擎未标记任何问题，我亦未发现语义级异常。借贷平衡、摘要与科目匹配、附单据2张合理、金额正常。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0005",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0005",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "系统生成的月末折旧计提凭证，借贷平衡，摘要与科目匹配，无附单据属于常态。规则引擎未标记任何问题，未发现语义级异常。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0006",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0006",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "规则引擎未标记任何问题，我也未发现语义级异常。借贷平衡、摘要与科目匹配（停车场费用归入汽车费用科目合理）、附单据5张、金额正常，整体干净。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0007",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0007",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "规则引擎未标记任何问题，我亦未发现语义级异常。借贷平衡，摘要与科目匹配（境内差旅费计入业务费用-差旅费），金额合理，tag齐全，附单据4份，整体合规。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0008",
+    "injected_anomaly": "A1_MISSING_DOCS_EXPENSE",
+    "rule_flags": [
+      {
+        "rule_id": "R002",
+        "severity": "red",
+        "title": "费用支付附单据数为 0"
+      }
+    ],
+    "llm_assessment": {
+      "voucher_id": "0008",
+      "overall_assessment": "suspicious",
+      "concerns": [],
+      "recommended_action": "human_review",
+      "confidence": 0.85,
+      "notes_to_reviewer": "规则引擎已标记 R002（附单据数为0），同意该判断。摘要写的是\"货款\"但科目归入\"办公费\"，虽可接受但结合零附件单据，建议核实该笔物业公司付款的实际业务背景及发票情况。"
+    },
+    "bucket": "TP",
+    "success": true
+  },
+  {
+    "voucher_id": "0009",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0009",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "规则引擎未标记任何问题，我亦未发现语义级异常。该凭证为汽车费用支付，借贷平衡，摘要与科目匹配，附单据2张，属正常业务。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0010",
+    "injected_anomaly": "A3_MISSING_PERSONNEL_TRAVEL",
+    "rule_flags": [
+      {
+        "rule_id": "R004",
+        "severity": "yellow",
+        "title": "差旅费缺少【人员档案】"
+      }
+    ],
+    "llm_assessment": {
+      "voucher_id": "0010",
+      "overall_assessment": "suspicious",
+      "concerns": [],
+      "recommended_action": "human_review",
+      "confidence": 0.85,
+      "notes_to_reviewer": "规则引擎已标记 YELLOW 级问题（R004：差旅费缺少人员档案），同意此判断。建议补充人员档案 tag 以完善费用归集与追责链条。"
+    },
+    "bucket": "TP",
+    "success": true
+  },
+  {
+    "voucher_id": "0011",
+    "injected_anomaly": "A4_MISSING_PROJECT_TRAVEL",
+    "rule_flags": [
+      {
+        "rule_id": "R005",
+        "severity": "yellow",
+        "title": "差旅费缺少【项目名称】"
+      }
+    ],
+    "llm_assessment": {
+      "voucher_id": "0011",
+      "overall_assessment": "suspicious",
+      "concerns": [],
+      "recommended_action": "human_review",
+      "confidence": 0.85,
+      "notes_to_reviewer": "规则引擎标记了 YELLOW 级问题（差旅费缺少项目名称），因此 overall_assessment 为 suspicious。凭证本身借贷平衡、摘要与科目匹配、附单据3份合理，未发现额外恶化因素，无需升级为 concerning。"
+    },
+    "bucket": "TP",
+    "success": true
+  },
+  {
+    "voucher_id": "0012",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0012",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "规则引擎未标记任何问题，我也未发现语义级异常。借贷平衡，摘要与科目匹配（加油站费用归入汽车费用科目合理），tag齐全，金额正常。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0013",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0013",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "规则引擎未标记任何问题，我亦未发现语义级异常。借贷平衡、摘要与科目匹配（差旅代理货款归入办公费属合法处理），附单据4份齐全，金额合理。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0014",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0014",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "规则引擎未标记任何问题，我也未发现语义级异常。凭证借贷平衡，摘要与科目匹配（境内差旅费入差旅费科目），tag齐全，金额合理。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0015",
+    "injected_anomaly": "A3_MISSING_PERSONNEL_TRAVEL",
+    "rule_flags": [
+      {
+        "rule_id": "R004",
+        "severity": "yellow",
+        "title": "差旅费缺少【人员档案】"
+      }
+    ],
+    "llm_assessment": {
+      "voucher_id": "0015",
+      "overall_assessment": "suspicious",
+      "concerns": [],
+      "recommended_action": "human_review",
+      "confidence": 0.85,
+      "notes_to_reviewer": "规则引擎已标记 R004 YELLOW：差旅费分录缺少人员档案 tag，无法有效追责和归集。除此之外未发现其他语义级异常，摘要与科目匹配，金额合理，附单据5份充足。"
+    },
+    "bucket": "TP",
+    "success": true
+  },
+  {
+    "voucher_id": "0016",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0016",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "规则引擎未标记任何问题，我也未发现语义级异常。该凭证为支付易通行（隧道/道路通行费）的银行凭证，借方计入汽车费用，贷方为银行存款，借贷平衡、摘要与科目匹配、附单据2张合理，属于正常业务。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0017",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0017",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "规则引擎未标记任何问题，我亦未发现语义级异常。借贷平衡、摘要与科目匹配、附单据3张合理，金额正常。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0018",
+    "injected_anomaly": "A5_MISSING_COUNTERPARTY",
+    "rule_flags": [
+      {
+        "rule_id": "R006",
+        "severity": "yellow",
+        "title": "费用支出缺少【客商】"
+      }
+    ],
+    "llm_assessment": {
+      "voucher_id": "0018",
+      "overall_assessment": "suspicious",
+      "concerns": [],
+      "recommended_action": "human_review",
+      "confidence": 0.85,
+      "notes_to_reviewer": "规则引擎已标记费用支出缺少客商信息，金额约3.1万港币，无法追溯交易对手。建议补充客商档案或提供合同/发票佐证。"
+    },
+    "bucket": "TP",
+    "success": true
+  },
+  {
+    "voucher_id": "0019",
+    "injected_anomaly": "A1_MISSING_DOCS_EXPENSE",
+    "rule_flags": [
+      {
+        "rule_id": "R002",
+        "severity": "red",
+        "title": "费用支付附单据数为 0"
+      }
+    ],
+    "llm_assessment": {
+      "voucher_id": "0019",
+      "overall_assessment": "suspicious",
+      "concerns": [],
+      "recommended_action": "human_review",
+      "confidence": 0.85,
+      "notes_to_reviewer": "规则引擎已标记 R002（附单据数为0），金额34,796.99港币非小额，且凭证非系统生成，缺少票据支撑风险较高。同意规则引擎的判断，建议要求补充发票或合同等支撑单据后再行审批。"
+    },
+    "bucket": "TP",
+    "success": true
+  },
+  {
+    "voucher_id": "0020",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0020",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "规则引擎未标记任何问题，我也未发现语义级异常。该凭证为支付停车场费用的银行凭证，借贷平衡，摘要与科目匹配，附单据4张，属于正常业务。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0021",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0021",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "该凭证为同一实体下银行账户间的内部资金调拨（储蓄户转往来户），借贷平衡，摘要与科目匹配，属于正常资金管理操作。规则引擎未标记任何问题，未发现语义级异常。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0022",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0022",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "规则引擎未标记任何问题，我亦未发现语义级异常。凭证借贷平衡，摘要与科目匹配（境内差旅费计入业务费用-差旅费），附单据6份齐全，金额合理，tag信息完整。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0023",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0023",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "规则引擎未标记任何问题，我也未发现语义级异常。该凭证为行政部汽车费用报销，借贷平衡，摘要与科目匹配，附单据5张，金额合理。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0024",
+    "injected_anomaly": "A3_MISSING_PERSONNEL_TRAVEL",
+    "rule_flags": [
+      {
+        "rule_id": "R004",
+        "severity": "yellow",
+        "title": "差旅费缺少【人员档案】"
+      }
+    ],
+    "llm_assessment": {
+      "voucher_id": "0024",
+      "overall_assessment": "suspicious",
+      "concerns": [],
+      "recommended_action": "human_review",
+      "confidence": 0.85,
+      "notes_to_reviewer": "规则引擎已标记 R004 YELLOW（差旅费缺少人员档案），同意该判断。建议补充人员档案 tag 以完善费用归集与追责链条。"
+    },
+    "bucket": "TP",
+    "success": true
+  },
+  {
+    "voucher_id": "0025",
+    "injected_anomaly": "A5_MISSING_COUNTERPARTY",
+    "rule_flags": [
+      {
+        "rule_id": "R006",
+        "severity": "yellow",
+        "title": "费用支出缺少【客商】"
+      }
+    ],
+    "llm_assessment": {
+      "voucher_id": "0025",
+      "overall_assessment": "suspicious",
+      "concerns": [],
+      "recommended_action": "human_review",
+      "confidence": 0.85,
+      "notes_to_reviewer": "规则引擎已标记费用支出缺少客商信息，无法追溯交易对手。摘要为\"某某差旅代理货款\"但归入办公费科目，建议核实该笔支出的业务实质及对手方信息。"
+    },
+    "bucket": "TP",
+    "success": true
+  },
+  {
+    "voucher_id": "0026",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0026",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "规则引擎未标记任何问题，我亦未发现语义级异常。借贷平衡、摘要与科目匹配、附单据3份合理、金额无异常凑整。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0027",
+    "injected_anomaly": "A2_MANUAL_ENTRY_LARGE",
+    "rule_flags": [
+      {
+        "rule_id": "R003",
+        "severity": "yellow",
+        "title": "大额支付未经费控系统"
+      }
+    ],
+    "llm_assessment": {
+      "voucher_id": "0027",
+      "overall_assessment": "suspicious",
+      "concerns": [],
+      "recommended_action": "human_review",
+      "confidence": 0.85,
+      "notes_to_reviewer": "规则引擎已标记 R003（YELLOW），金额30,000港币通过总账手动录入而未经费控系统预审，存在绕过审批控制的风险。建议核实该笔停车场费用的合同依据及审批流程是否合规。"
+    },
+    "bucket": "TP",
+    "success": true
+  },
+  {
+    "voucher_id": "0028",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0028",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "凭证借贷平衡，摘要与科目匹配（加油站费用归入汽车费用科目合理），附单据3张，tag齐全，金额正常。规则引擎未标记任何问题，未发现语义级异常。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0029",
+    "injected_anomaly": "A6_VAGUE_SUMMARY_LARGE",
+    "rule_flags": [
+      {
+        "rule_id": "R007",
+        "severity": "yellow",
+        "title": "大额支付摘要模糊"
+      }
+    ],
+    "llm_assessment": {
+      "voucher_id": "0029",
+      "overall_assessment": "suspicious",
+      "concerns": [],
+      "recommended_action": "human_review",
+      "confidence": 0.85,
+      "notes_to_reviewer": "规则引擎已识别摘要模糊问题（R007），金额28,342.67港币且摘要仅「付款」二字，缺乏业务描述。同意规则引擎的判断，建议核实该笔付款的实际业务背景及审批依据。"
+    },
+    "bucket": "TP",
+    "success": true
+  },
+  {
+    "voucher_id": "0030",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0030",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "规则引擎未标记任何问题，我亦未发现语义级异常。该凭证为支付停车场费用的银行凭证，借贷平衡，摘要与科目匹配，附单据2张，属正常业务。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0031",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0031",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "规则引擎未标记任何问题，我亦未发现语义级异常。凭证借贷平衡，摘要与科目匹配，附单据4份合理，金额数量级正常。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0032",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0032",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "规则引擎未标记任何问题，我也未发现语义级异常。该凭证为正常的汽车费用支付，借贷平衡，摘要与科目匹配，附单据3张，金额合理。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0033",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0033",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "规则引擎未标记任何问题，且我未发现语义级异常。借贷平衡、摘要与科目匹配（境内差旅费对应差旅费科目）、附单据4张合理、金额正常。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0034",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0034",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "系统生成的月末折旧计提凭证，借贷平衡，摘要与科目匹配，无附单据属于常态。规则引擎未标记任何问题，未发现语义级异常。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0035",
+    "injected_anomaly": "A5_MISSING_COUNTERPARTY",
+    "rule_flags": [
+      {
+        "rule_id": "R006",
+        "severity": "yellow",
+        "title": "费用支出缺少【客商】"
+      }
+    ],
+    "llm_assessment": {
+      "voucher_id": "0035",
+      "overall_assessment": "suspicious",
+      "concerns": [],
+      "recommended_action": "human_review",
+      "confidence": 0.85,
+      "notes_to_reviewer": "规则引擎已标记费用支出缺少客商信息（R006 YELLOW），同意此判断。摘要为\"某某保险货款\"归入办公费科目虽可接受，但无客商tag无法追溯交易对手，建议补充客商信息后审批。"
+    },
+    "bucket": "TP",
+    "success": true
+  },
+  {
+    "voucher_id": "0036",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0036",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "该凭证为同一实体下银行账户间的内部资金调拨（储蓄户转往来户），借贷平衡，摘要与业务一致，规则引擎未标记任何问题，属于正常财务操作。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0037",
+    "injected_anomaly": "A5_MISSING_COUNTERPARTY",
+    "rule_flags": [
+      {
+        "rule_id": "R006",
+        "severity": "yellow",
+        "title": "费用支出缺少【客商】"
+      }
+    ],
+    "llm_assessment": {
+      "voucher_id": "0037",
+      "overall_assessment": "suspicious",
+      "concerns": [],
+      "recommended_action": "human_review",
+      "confidence": 0.85,
+      "notes_to_reviewer": "规则引擎标记了R006（YELLOW），费用支出缺少客商信息，无法追溯交易对手。整体凭证借贷平衡、摘要与科目匹配、附单据5张，但建议补充客商信息以完善合规追溯。"
+    },
+    "bucket": "TP",
+    "success": true
+  },
+  {
+    "voucher_id": "0038",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0038",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "规则引擎未标记任何问题，凭证借贷平衡、摘要与科目匹配、附单据5张齐全，属于正常的境内差旅费报销，可自动通过。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0039",
+    "injected_anomaly": "A4_MISSING_PROJECT_TRAVEL",
+    "rule_flags": [
+      {
+        "rule_id": "R005",
+        "severity": "yellow",
+        "title": "差旅费缺少【项目名称】"
+      }
+    ],
+    "llm_assessment": {
+      "voucher_id": "0039",
+      "overall_assessment": "suspicious",
+      "concerns": [],
+      "recommended_action": "human_review",
+      "confidence": 0.85,
+      "notes_to_reviewer": "规则引擎标记了 R005 YELLOW 问题（差旅费缺少项目名称 tag），因此 overall_assessment 至少为 suspicious。该凭证本身借贷平衡、摘要与科目匹配、金额合理，未发现额外恶化因素，无需升级为 concerning。"
+    },
+    "bucket": "TP",
+    "success": true
+  },
+  {
+    "voucher_id": "0040",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0040",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "规则引擎未标记任何问题，我也未发现语义级异常。该凭证为支付易通行（隧道费/道路通行费）至汽车费用科目，借贷平衡、摘要与科目匹配、附单据5张合理，属于正常业务。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0041",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0041",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "规则引擎未标记任何问题，我也未发现语义级异常。该凭证借贷平衡、摘要与科目匹配、附单据4张合理，属于正常停车场费用支付。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0042",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0042",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "规则引擎未标记任何问题，我也未发现语义级异常。借贷平衡、摘要与科目匹配（差旅代理货款归入办公费属合法处理）、金额合理、tag齐全。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0043",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0043",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "规则引擎未标记任何问题，我也未发现语义级异常。借贷平衡、摘要与科目匹配（电信服务归入办公费属合法处理）、附单据5张、金额合理，可正常通过。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0044",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0044",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "该凭证为同一实体下银行账户间的内部资金调拨（储蓄户转往来户），借贷平衡，摘要与科目匹配，属于正常资金管理操作。规则引擎未标记任何问题，未发现语义级异常。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0045",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0045",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "该凭证为同一银行内部不同账户之间的资金调拨（储蓄户转往来户），借贷平衡，摘要与业务一致，规则引擎未标记任何问题，属于正常财务操作。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0046",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0046",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "系统生成的月末折旧计提凭证，借贷平衡，摘要与科目匹配，无附单据属于常态。规则引擎未标记任何问题，未发现语义级异常。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0047",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0047",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "系统生成的月末折旧计提凭证，借贷平衡，摘要与科目匹配，无附单据属常态。规则引擎未标记任何问题，未发现语义级异常。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0048",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0048",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "系统生成的月末折旧计提凭证，借贷平衡，摘要与科目匹配，无附单据属常态。规则引擎未标记任何问题，未发现语义级异常。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0049",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0049",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "规则引擎未标记任何问题，我亦未发现语义级异常。借贷平衡、摘要与科目匹配（境内差旅费入差旅费科目）、附单据5张合理、金额无异常凑整。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0050",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0050",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "该凭证为同一实体下银行账户间的内部资金调拨（储蓄户转往来户），借贷平衡，摘要与业务性质匹配。规则引擎未标记任何问题，未发现语义级异常。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0051",
+    "injected_anomaly": "A6_VAGUE_SUMMARY_LARGE",
+    "rule_flags": [
+      {
+        "rule_id": "R007",
+        "severity": "yellow",
+        "title": "大额支付摘要模糊"
+      }
+    ],
+    "llm_assessment": {
+      "voucher_id": "0051",
+      "overall_assessment": "suspicious",
+      "concerns": [],
+      "recommended_action": "human_review",
+      "confidence": 0.85,
+      "notes_to_reviewer": "规则引擎已识别摘要过于模糊的问题（R007），金额约3.9万港币且附单据5张，摘要仅写「付款」缺乏业务描述，建议核实实际业务背景后补充摘要。"
+    },
+    "bucket": "TP",
+    "success": true
+  },
+  {
+    "voucher_id": "0052",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0052",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "规则引擎未标记任何问题，我亦未发现语义级异常。借贷平衡、摘要与科目匹配（境内差旅费入500603差旅费科目合理）、金额正常、附单据4份齐全。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0053",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0053",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "规则引擎未标记任何问题，我亦未发现语义级异常。凭证借贷平衡，摘要与科目匹配，附单据3张，金额合理，属于正常的境内差旅费报销。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0054",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0054",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "规则引擎未标记任何问题，我也未发现语义级异常。该凭证为支付易通行（隧道/道路通行费）的银行付款凭证，借贷平衡，摘要与汽车费用科目匹配，附单据2张，属正常业务。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0055",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0055",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "该凭证为同一银行内部储蓄户与往来户之间的资金调拨，借贷平衡，摘要与业务性质匹配，属于正常资金管理操作。规则引擎未标记任何问题，未发现语义级异常。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0056",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0056",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "规则引擎未标记任何问题，我也未发现语义级异常。借贷平衡、摘要与科目匹配（境内差旅费对应差旅费科目）、金额合理、tag齐全，可自动通过。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0057",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0057",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "规则引擎未标记任何问题，我亦未发现语义级异常。借贷平衡、摘要与科目匹配（境内差旅费入差旅费科目）、附单据6份合理、金额无异常凑整，可自动通过。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0058",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0058",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "系统生成的月末折旧计提凭证，借贷平衡，摘要与科目匹配，属于正常月末处理。规则引擎未标记任何问题，未发现语义级异常。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0059",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0059",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "规则引擎未标记任何问题，我也未发现语义级异常。借贷平衡、摘要与科目匹配（加油站费用归入汽车费用科目合理）、附单据5张齐全、金额正常。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0060",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0060",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "系统生成的月末折旧计提凭证，借贷平衡，摘要与科目匹配，无附单据属于常态。规则引擎未标记任何问题，未发现语义级异常。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0061",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0061",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "规则引擎未标记任何问题，我也未发现语义级异常。借贷平衡、摘要与科目匹配、附单据4份合理，属于正常的差旅代理付款业务。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0062",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0062",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "规则引擎未标记任何问题，我也未发现语义级异常。借贷平衡、摘要与科目匹配（差旅代理货款归入办公费属合法处理），附单据4份，金额合理。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0063",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0063",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "规则引擎未标记任何问题，我也未发现语义级异常。该凭证为支付易通行（隧道费/道路通行费）的银行付款凭证，借贷平衡，摘要与汽车费用科目匹配，附单据4张，信息完整。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0064",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0064",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "系统生成的月末折旧计提凭证，借贷平衡，摘要与科目匹配，属于正常财务处理。规则引擎未标记任何问题，未发现语义级异常。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0065",
+    "injected_anomaly": "A1_MISSING_DOCS_EXPENSE",
+    "rule_flags": [
+      {
+        "rule_id": "R002",
+        "severity": "red",
+        "title": "费用支付附单据数为 0"
+      }
+    ],
+    "llm_assessment": {
+      "voucher_id": "0065",
+      "overall_assessment": "suspicious",
+      "concerns": [],
+      "recommended_action": "human_review",
+      "confidence": 0.85,
+      "notes_to_reviewer": "规则引擎已标记 R002（附单据数为0），金额29,212.55港币非小额，缺少发票或合同等支撑材料。建议补充保险付款的原始单据后再行审批。"
+    },
+    "bucket": "TP",
+    "success": true
+  },
+  {
+    "voucher_id": "0066",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0066",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "这是一笔银行内部转账凭证，从储蓄户转入往来户，借贷平衡，金额一致，属于正常的资金调拨操作。规则引擎未标记任何问题，且未发现语义级异常。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0067",
+    "injected_anomaly": "A4_MISSING_PROJECT_TRAVEL",
+    "rule_flags": [
+      {
+        "rule_id": "R005",
+        "severity": "yellow",
+        "title": "差旅费缺少【项目名称】"
+      }
+    ],
+    "llm_assessment": {
+      "voucher_id": "0067",
+      "overall_assessment": "suspicious",
+      "concerns": [],
+      "recommended_action": "human_review",
+      "confidence": 0.85,
+      "notes_to_reviewer": "规则引擎标记了 R005 YELLOW 问题（差旅费缺少项目名称 tag），因此 overall_assessment 至少为 suspicious。该凭证本身借贷平衡、摘要与科目匹配、附单据3张，未发现额外恶化因素，无需升级为 concerning。"
+    },
+    "bucket": "TP",
+    "success": true
+  },
+  {
+    "voucher_id": "0068",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0068",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "规则引擎未标记任何问题，我也未发现语义级异常。该凭证为同一实体下银行存款内部转账（储蓄户转往来户），借贷平衡，金额一致，属于正常资金调拨。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0069",
+    "injected_anomaly": "A3_MISSING_PERSONNEL_TRAVEL",
+    "rule_flags": [
+      {
+        "rule_id": "R004",
+        "severity": "yellow",
+        "title": "差旅费缺少【人员档案】"
+      }
+    ],
+    "llm_assessment": {
+      "voucher_id": "0069",
+      "overall_assessment": "suspicious",
+      "concerns": [],
+      "recommended_action": "human_review",
+      "confidence": 0.85,
+      "notes_to_reviewer": "规则引擎已标记 R004 YELLOW（差旅费缺少人员档案），同意该判断。建议补充人员信息以便费用归集与追责。"
+    },
+    "bucket": "TP",
+    "success": true
+  },
+  {
+    "voucher_id": "0070",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0070",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "规则引擎未标记任何问题，我也未发现语义级异常。借贷平衡、摘要与科目匹配（境内差旅费对应差旅费科目）、金额合理、tag齐全，可正常通过。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0071",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0071",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "规则引擎未标记任何问题，我亦未发现语义级异常。借贷平衡、摘要与科目匹配（会计师事务所服务费归入办公费合理）、金额正常、tag齐全，可自动通过。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0072",
+    "injected_anomaly": "A2_MANUAL_ENTRY_LARGE",
+    "rule_flags": [
+      {
+        "rule_id": "R003",
+        "severity": "yellow",
+        "title": "大额支付未经费控系统"
+      }
+    ],
+    "llm_assessment": {
+      "voucher_id": "0072",
+      "overall_assessment": "suspicious",
+      "concerns": [],
+      "recommended_action": "human_review",
+      "confidence": 0.85,
+      "notes_to_reviewer": "规则引擎已标记 R003（YELLOW），金额30,000港币通过总账手动录入而非经费控系统预审，存在绕过审批流程的风险。凭证本身借贷平衡、摘要与科目匹配、附单据5张，未见额外恶化因素，建议核实该笔易通行费用是否已走线下审批流程。"
+    },
+    "bucket": "TP",
+    "success": true
+  },
+  {
+    "voucher_id": "0073",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0073",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "该凭证为同一实体下银行账户间的内部资金调拨（储蓄户转往来户），借贷平衡，摘要与科目匹配，属于正常财务操作。规则引擎未标记任何问题，未发现语义级异常。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0074",
+    "injected_anomaly": "A6_VAGUE_SUMMARY_LARGE",
+    "rule_flags": [
+      {
+        "rule_id": "R007",
+        "severity": "yellow",
+        "title": "大额支付摘要模糊"
+      }
+    ],
+    "llm_assessment": {
+      "voucher_id": "0074",
+      "overall_assessment": "suspicious",
+      "concerns": [],
+      "recommended_action": "human_review",
+      "confidence": 0.85,
+      "notes_to_reviewer": "规则引擎已识别摘要过于模糊的问题（R007），金额14,262.61港币且对方为差旅代理，摘要仅写「付款」缺乏业务实质描述，同意规则引擎的判断，建议补充具体业务事由。"
+    },
+    "bucket": "TP",
+    "success": true
+  },
+  {
+    "voucher_id": "0075",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0075",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "规则引擎未标记任何问题，我亦未发现语义级异常。借贷平衡，摘要与科目匹配（会计师事务所服务费归入办公费合理），金额无异常凑整，tag齐全，附单据4份。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0076",
+    "injected_anomaly": "A2_MANUAL_ENTRY_LARGE",
+    "rule_flags": [
+      {
+        "rule_id": "R003",
+        "severity": "yellow",
+        "title": "大额支付未经费控系统"
+      }
+    ],
+    "llm_assessment": {
+      "voucher_id": "0076",
+      "overall_assessment": "suspicious",
+      "concerns": [],
+      "recommended_action": "human_review",
+      "confidence": 0.85,
+      "notes_to_reviewer": "规则引擎已标记 R003（YELLOW），大额支付30,000 HKD经总账手动录入而未经费控系统预审。同意此判断，建议核实该笔易通行费用是否已走线下审批流程。"
+    },
+    "bucket": "TP",
+    "success": true
+  },
+  {
+    "voucher_id": "0077",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0077",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "规则引擎未标记任何问题，我也未发现语义级异常。该凭证为支付易通行（隧道费/道路通行费）的银行凭证，借贷平衡，摘要与汽车费用科目匹配，附单据5张合理，金额678.91港币属正常商业金额。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0078",
+    "injected_anomaly": "A2_MANUAL_ENTRY_LARGE",
+    "rule_flags": [
+      {
+        "rule_id": "R003",
+        "severity": "yellow",
+        "title": "大额支付未经费控系统"
+      }
+    ],
+    "llm_assessment": {
+      "voucher_id": "0078",
+      "overall_assessment": "suspicious",
+      "concerns": [],
+      "recommended_action": "human_review",
+      "confidence": 0.85,
+      "notes_to_reviewer": "规则引擎已标记 R003（YELLOW）：30,000 HKD 大额支付手动录入总账，未经费控系统预审。同意此判断，建议核实该笔停车场费用是否已通过线下审批流程，并确认制单人 Faye 同时兼任审核人的职责分离问题。"
+    },
+    "bucket": "TP",
+    "success": true
+  },
+  {
+    "voucher_id": "0079",
+    "injected_anomaly": "A3_MISSING_PERSONNEL_TRAVEL",
+    "rule_flags": [
+      {
+        "rule_id": "R004",
+        "severity": "yellow",
+        "title": "差旅费缺少【人员档案】"
+      }
+    ],
+    "llm_assessment": {
+      "voucher_id": "0079",
+      "overall_assessment": "suspicious",
+      "concerns": [],
+      "recommended_action": "human_review",
+      "confidence": 0.85,
+      "notes_to_reviewer": "规则引擎已标记 R004 YELLOW 问题：差旅费缺少人员档案 tag，无法追责归集。本人未发现额外的语义级异常，金额合理、借贷平衡、摘要与科目匹配，建议补充人员信息后自动审批。"
+    },
+    "bucket": "TP",
+    "success": true
+  },
+  {
+    "voucher_id": "0080",
+    "injected_anomaly": "A2_MANUAL_ENTRY_LARGE",
+    "rule_flags": [
+      {
+        "rule_id": "R003",
+        "severity": "yellow",
+        "title": "大额支付未经费控系统"
+      }
+    ],
+    "llm_assessment": {
+      "voucher_id": "0080",
+      "overall_assessment": "suspicious",
+      "concerns": [],
+      "recommended_action": "human_review",
+      "confidence": 0.85,
+      "notes_to_reviewer": "规则引擎已标记 R003（YELLOW），金额30,000港币的大额支付通过总账手动录入而未经费控系统预审。同意规则引擎的判断，建议核实该笔易通行费用是否已走线下审批流程。"
+    },
+    "bucket": "TP",
+    "success": true
+  },
+  {
+    "voucher_id": "0081",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0081",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "系统生成的月末折旧计提凭证，借贷平衡，摘要与科目匹配，无附单据属常态。规则引擎未标记任何问题，未发现语义级异常。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0082",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0082",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "该凭证为同一实体下银行账户间的内部资金调拨（储蓄户转往来户），借贷平衡，摘要与业务性质匹配，规则引擎未标记任何问题，属于正常财务操作。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0083",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0083",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "规则引擎未标记任何问题，我亦未发现语义级异常。借贷平衡、摘要与科目匹配、tag齐全、金额合理，可正常通过。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0084",
+    "injected_anomaly": "A1_MISSING_DOCS_EXPENSE",
+    "rule_flags": [
+      {
+        "rule_id": "R002",
+        "severity": "red",
+        "title": "费用支付附单据数为 0"
+      }
+    ],
+    "llm_assessment": {
+      "voucher_id": "0084",
+      "overall_assessment": "suspicious",
+      "concerns": [],
+      "recommended_action": "human_review",
+      "confidence": 0.85,
+      "notes_to_reviewer": "规则引擎已标记 R002（附单据数为0），金额9,057.26港币非小额，缺少发票或账单支撑。建议补充某某电讯的账单或发票后再行审批。"
+    },
+    "bucket": "TP",
+    "success": true
+  },
+  {
+    "voucher_id": "0085",
+    "injected_anomaly": "A4_MISSING_PROJECT_TRAVEL",
+    "rule_flags": [
+      {
+        "rule_id": "R005",
+        "severity": "yellow",
+        "title": "差旅费缺少【项目名称】"
+      }
+    ],
+    "llm_assessment": {
+      "voucher_id": "0085",
+      "overall_assessment": "suspicious",
+      "concerns": [],
+      "recommended_action": "human_review",
+      "confidence": 0.85,
+      "notes_to_reviewer": "规则引擎标记了 YELLOW 级问题（R005：差旅费缺少项目名称），因此 overall_assessment 至少为 suspicious。除此之外未发现其他语义级异常，摘要与科目匹配、金额合理、附单据齐全，建议补充项目名称后即可通过。"
+    },
+    "bucket": "TP",
+    "success": true
+  },
+  {
+    "voucher_id": "0086",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0086",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "规则引擎未标记任何问题，我也未发现语义级异常。借贷平衡、摘要与科目匹配（物业管理费归入办公费合理）、金额正常、tag齐全，可自动通过。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0087",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0087",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "规则引擎未标记任何问题，我也未发现语义级异常。该凭证为支付易通行（隧道费/道路通行费）的银行凭证，借贷平衡，摘要与汽车费用科目匹配，附单据2张，属于正常业务支出。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0088",
+    "injected_anomaly": "A6_VAGUE_SUMMARY_LARGE",
+    "rule_flags": [
+      {
+        "rule_id": "R007",
+        "severity": "yellow",
+        "title": "大额支付摘要模糊"
+      }
+    ],
+    "llm_assessment": {
+      "voucher_id": "0088",
+      "overall_assessment": "suspicious",
+      "concerns": [],
+      "recommended_action": "human_review",
+      "confidence": 0.85,
+      "notes_to_reviewer": "规则引擎已识别摘要过于模糊的问题（R007），金额约3.9万港币且摘要仅「付款」二字，缺乏业务实质描述。建议补充具体业务事由（如审计费、咨询费等）以增强可审计性。"
+    },
+    "bucket": "TP",
+    "success": true
+  },
+  {
+    "voucher_id": "0089",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0089",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "规则引擎未标记任何问题，我亦未发现语义级异常。借贷平衡，摘要与科目匹配（电信服务归入办公费属合法处理），金额合理，tag齐全。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0090",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0090",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "系统生成的月末折旧计提凭证，借贷平衡，摘要与科目匹配，无附单据属于常态。规则引擎未标记任何问题，未发现语义级异常。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0091",
+    "injected_anomaly": "A5_MISSING_COUNTERPARTY",
+    "rule_flags": [
+      {
+        "rule_id": "R006",
+        "severity": "yellow",
+        "title": "费用支出缺少【客商】"
+      }
+    ],
+    "llm_assessment": {
+      "voucher_id": "0091",
+      "overall_assessment": "suspicious",
+      "concerns": [],
+      "recommended_action": "human_review",
+      "confidence": 0.85,
+      "notes_to_reviewer": "规则引擎已标记费用支出缺少客商tag（R006 YELLOW），同意该判断。摘要为\"某某保险货款\"归入办公费科目虽可接受，但无客商信息无法核实交易对手，建议补充客商档案后重新审核。"
+    },
+    "bucket": "TP",
+    "success": true
+  },
+  {
+    "voucher_id": "0092",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0092",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "规则引擎未标记任何问题，我亦未发现语义级异常。凭证借贷平衡、摘要与科目匹配、附单据5张齐全，属于正常差旅报销业务。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0093",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0093",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "规则引擎未标记任何问题，我亦未发现语义级异常。借贷平衡，摘要与科目匹配（物业管理费归入办公费合理），金额正常，tag齐全。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0094",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0094",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "规则引擎未标记任何问题，我也未发现语义级异常。借贷平衡、摘要与科目匹配、附单据齐全，可正常通过。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0095",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0095",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "规则引擎未标记任何问题，我也未发现语义级异常。借贷平衡、摘要与科目匹配（易通行货款归入办公费合理）、金额正常、tag齐全，可自动通过。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0096",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0096",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "规则引擎未标记任何问题，我也未发现语义级异常。该凭证借贷平衡、摘要与科目匹配、附单据4份合理、金额正常，可自动通过。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0097",
+    "injected_anomaly": "A1_MISSING_DOCS_EXPENSE",
+    "rule_flags": [
+      {
+        "rule_id": "R002",
+        "severity": "red",
+        "title": "费用支付附单据数为 0"
+      }
+    ],
+    "llm_assessment": {
+      "voucher_id": "0097",
+      "overall_assessment": "suspicious",
+      "concerns": [],
+      "recommended_action": "human_review",
+      "confidence": 0.85,
+      "notes_to_reviewer": "规则引擎已标记 R002（附单据数为0），金额超1万港币且非系统生成，缺少票据支撑风险较高。同意规则引擎的判断，建议补充发票或付款凭证后再行审批。"
+    },
+    "bucket": "TP",
+    "success": true
+  },
+  {
+    "voucher_id": "0098",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0098",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "规则引擎未标记任何问题，我也未发现语义级异常。借贷平衡、摘要与科目匹配、附单据3张合理，金额无异常凑整现象。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0099",
+    "injected_anomaly": null,
+    "rule_flags": [],
+    "llm_assessment": {
+      "voucher_id": "0099",
+      "overall_assessment": "clean",
+      "concerns": [],
+      "recommended_action": "auto_approve",
+      "confidence": 0.95,
+      "notes_to_reviewer": "规则引擎未标记任何问题，我亦未发现语义级异常。借贷平衡、摘要与科目匹配、附单据6张合理，金额正常。"
+    },
+    "bucket": "TN",
+    "success": true
+  },
+  {
+    "voucher_id": "0100",
+    "injected_anomaly": "A6_VAGUE_SUMMARY_LARGE",
+    "rule_flags": [
+      {
+        "rule_id": "R007",
+        "severity": "yellow",
+        "title": "大额支付摘要模糊"
+      }
+    ],
+    "llm_assessment": {
+      "voucher_id": "0100",
+      "overall_assessment": "suspicious",
+      "concerns": [],
+      "recommended_action": "human_review",
+      "confidence": 0.85,
+      "notes_to_reviewer": "规则引擎已识别摘要模糊问题（R007），金额约1.2万港币且附单据5张，摘要仅写「支出」缺乏业务描述，建议补充具体采购内容以便审计追溯。"
+    },
+    "bucket": "TP",
+    "success": true
+  }
+]
